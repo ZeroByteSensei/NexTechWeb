@@ -24,7 +24,7 @@
       },
       "text_color": {
         "default": "#B4AFB6",
-        "dark": "#fff",
+        "dark": "#000",
         "light": "#B4AFB6"
       }
     }

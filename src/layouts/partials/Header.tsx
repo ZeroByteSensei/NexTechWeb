@@ -1,166 +1,155 @@
-"use client";
+"use client"
 
-import Logo from "@/components/Logo";
-import ThemeSwitcher from "@/components/ThemeSwitcher";
-import config from "@/config/config.json";
-import menu from "@/config/menu.json";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import React, { useEffect } from "react";
-import { IoSearch } from "react-icons/io5";
+import {useState } from "react";
+import AnimatedLink from "./AnimatedLink";
+import { AnimatePresence, motion } from "framer-motion";
 
-//  child navigation link interface
-export interface IChildNavigationLink {
-  name: string;
-  url: string;
-}
-
-// navigation link interface
-export interface INavigationLink {
-  name: string;
-  url: string;
-  hasChildren?: boolean;
-  children?: IChildNavigationLink[];
-}
-
+const navLinks = [
+  { title: "Visit Home", href: "/" },
+  { title: "Our Courses", href: "/" },
+  { title: "Know About Us", href: "/" },
+  { title: "Our Blogs", href: "/" },
+  { title: "Get In Touch", href: "/" },
+];
 const Header = () => {
-  // distructuring the main menu from menu object
-  const { main }: { main: INavigationLink[] } = menu;
-  const { navigation_button, settings } = config;
-  // get current path
-  const pathname = usePathname();
-
-  // scroll to top on route change
-  useEffect(() => {
-    window.scroll(0, 0);
-  }, [pathname]);
+  const [open, setOpen] = useState(false);
+  const toggleMenu = () => {
+    setOpen((prevOpen) => !prevOpen);
+  };
+  const menuVars = {
+    initial: {
+      scaleY: 0,
+    },
+    animate: {
+      scaleY: 1,
+      transition: {
+        duration: 0.5,
+        ease: [0.12, 0, 0.39, 0],
+      },
+    },
+    exit: {
+      scaleY: 0,
+      transition: {
+        delay: 0.5,
+        duration: 0.5,
+        ease: [0.22, 1, 0.36, 1],
+      },
+    },
+  };
+  const containerVars = {
+    initial: {
+      transition: {
+        staggerChildren: 0.09,
+        staggerDirection: -1,
+      },
+    },
+    open: {
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.09,
+        staggerDirection: 1,
+      },
+    },
+  };
 
   return (
-    <header
-      className={`header z-30 ${settings.sticky_header && "sticky top-0"}`}
-    >
-      <nav className="navbar container">
-        {/* logo */}
-        <div className="order-0">
-          <Logo />
+    <header className="bg-gray-200 fixed w-full h-[78px] z-50">
+      <nav className="flex justify-between items-center py-4 lg:py-2 px-10">
+        <div className="flex items-center gap-[1ch]">
+          <div className="w-5 h-5 bg-yellow-400 rounded-full" />
+            <span className="text-sm font-semibold tracking-widest">
+              PORTFOLIO
+            </span>
         </div>
-        {/* navbar toggler */}
-        <input id="nav-toggle" type="checkbox" className="hidden" />
-        <label
-          htmlFor="nav-toggle"
-          className="order-3 cursor-pointer flex items-center lg:hidden text-dark dark:text-white lg:order-1"
-        >
-          <svg
-            id="show-button"
-            className="h-6 fill-current block"
-            viewBox="0 0 20 20"
+        <div className="lg:flex hidden gap-12 text-md text-zinc-400">
+          <Link href="#" className="text-black font-medium">
+            <AnimatedLink title={"Home"} />
+          </Link>
+          <Link href={"/projects"}>
+            <AnimatedLink title={"Courses"} />
+          </Link>
+          <AnimatedLink title={"Contact"} />
+        </div>
+        <div
+          className="cursor-pointer text-md text-white hover:bg-black hover:rounded-full px-3 py-5 transition-all"
+          onClick={toggleMenu}
           >
-            <title>Menu Open</title>
-            <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
-          </svg>
-          <svg
-            id="hide-button"
-            className="h-6 fill-current hidden"
-            viewBox="0 0 20 20"
-          >
-            <title>Menu Close</title>
-            <polygon
-              points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
-              transform="rotate(45 10 10)"
-            ></polygon>
-          </svg>
-        </label>
-        {/* /navbar toggler */}
-
-        <ul
-          id="nav-menu"
-          className="navbar-nav order-3 hidden w-full pb-6 lg:order-1 lg:flex lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8"
-        >
-          {main.map((menu, i) => (
-            <React.Fragment key={`menu-${i}`}>
-              {menu.hasChildren ? (
-                <li className="nav-item nav-dropdown group relative">
-                  <span
-                    className={`nav-link inline-flex items-center ${
-                      menu.children?.map(({ url }) => url).includes(pathname) ||
-                      menu.children
-                        ?.map(({ url }) => `${url}/`)
-                        .includes(pathname)
-                        ? "active"
-                        : ""
-                    }`}
-                  >
-                    {menu.name}
-                    <svg className="h-4 w-4 fill-current" viewBox="0 0 20 20">
-                      <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                    </svg>
-                  </span>
-                  <ul className="nav-dropdown-list hidden group-hover:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100">
-                    {menu.children?.map((child, i) => (
-                      <li className="nav-dropdown-item" key={`children-${i}`}>
-                        <Link
-                          href={child.url}
-                          className={`nav-dropdown-link block ${
-                            (pathname === `${child.url}/` ||
-                              pathname === child.url) &&
-                            "active"
-                          }`}
-                        >
-                          {child.name}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </li>
-              ) : (
-                <li className="nav-item">
-                  <Link
-                    href={menu.url}
-                    className={`nav-link block ${
-                      (pathname === `${menu.url}/` || pathname === menu.url) &&
-                      "active"
-                    }`}
-                  >
-                    {menu.name}
-                  </Link>
-                </li>
-              )}
-            </React.Fragment>
-          ))}
-          {navigation_button.enable && (
-            <li className="mt-4 inline-block lg:hidden">
-              <Link
-                className="btn btn-outline-primary btn-sm"
-                href={navigation_button.link}
-              >
-                {navigation_button.label}
-              </Link>
-            </li>
-          )}
-        </ul>
-        <div className="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
-          {settings.search && (
-            <button
-              className="border-border text-dark hover:text-primary dark:border-darkmode-border mr-5 inline-block border-r pr-5 text-xl dark:text-white dark:hover:text-darkmode-primary"
-              aria-label="search"
-              data-search-trigger
-            >
-              <IoSearch />
-            </button>
-          )}
-          <ThemeSwitcher className="mr-5" />
-          {navigation_button.enable && (
-            <Link
-              className="btn btn-outline-primary btn-sm hidden lg:inline-block"
-              href={navigation_button.link}
-            >
-              {navigation_button.label}
-            </Link>
-          )}
+            <AnimatedLink title="MENU"/>
         </div>
       </nav>
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            variants={menuVars}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            className="fixed left-0 top-0 w-full h-screen origin-top bg-yellow-400 text-black p-10"
+          >
+            <div className="flex h-full flex-col">
+              <div className="flex justify-between">
+                <h1 className="text-lg text-black">Portfolio</h1>
+                <p
+                  className="cursor-pointer text-md font-bold text-black hover:bg-black hover:rounded-full hover:text-yellow-400 px-3 py-5 transition-all"
+                  onClick={toggleMenu}
+                >
+                  <AnimatedLink title="CLOSE"/>
+                </p>
+              </div>
+              <motion.div
+                variants={containerVars}
+                initial="initial"
+                animate="open"
+                exit="initial"
+                className="flex flex-col h-full justify-center font-lora items-center gap-4 "
+              >
+                {navLinks.map((link, index) => {
+                  return (
+                    <div className="overflow-hidden">
+                      <MobileNavLink
+                        key={index}
+                        title={link.title}
+                        href={link.href}
+                      />
+                    </div>
+                  );
+                })}
+              </motion.div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 };
 
 export default Header;
+const mobileLinkVars = {
+  initial: {
+    y: "30vh",
+    transition: {
+      duration: 0.5,
+      ease: [0.37, 0, 0.63, 1],
+    },
+  },
+  open: {
+    y: 0,
+    transition: {
+      ease: [0, 0.55, 0.45, 1],
+      duration: 0.7,
+    },
+  },
+};
+const MobileNavLink = ({ title, href }:{title:string, href:string}) => {
+  return (
+    <motion.div
+      variants={mobileLinkVars}
+      className="text-5xl uppercase text-black font-bold"
+    >
+      <Link href={href}>
+        <AnimatedLink title={title}/>
+      </Link>
+    </motion.div>
+  );
+};

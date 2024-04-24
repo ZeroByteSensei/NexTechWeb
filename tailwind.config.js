@@ -1,4 +1,7 @@
 const theme = require("./src/config/theme.json");
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
 
 let font_base = Number(theme.fonts.font_size.base.replace("px", ""));
 let font_scale = Number(theme.fonts.font_size.scale);
@@ -83,9 +86,37 @@ module.exports = {
         primary: [fontPrimary, fontPrimaryType],
         secondary: [fontSecondary, fontSecondaryType],
       },
+      animation: {
+        scroll:
+          "scroll var(--animation-duration, 10s) var(--animation-direction, forwards) linear infinite",
+      },
+      keyframes: {
+        scroll: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
+          },
+        },
+        scrolll: {
+          from: {
+            transform: "translateX(0)",
+          },
+          to: {
+            transform: "translateX(-100%)",
+          },
+        },
+        scrollr: {
+          from: {
+            transform: "translateX(-150%)",
+          },
+          to: {
+            transform: "translateX(0)",
+          },
+        },
+      }
     },
   },
   plugins: [
+    require('tailwind-scrollbar-hide'),
     require("@tailwindcss/typography"),
     require("@tailwindcss/forms"),
     require("tailwind-bootstrap-grid")({
@@ -99,5 +130,17 @@ module.exports = {
         5: "3rem",
       },
     }),
+    addVariablesForColors,
   ],
 };
+
+function addVariablesForColors({ addBase, theme }) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+ 
+  addBase({
+    ":root": newVars,
+  });
+}

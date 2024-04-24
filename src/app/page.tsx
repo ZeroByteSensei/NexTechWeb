@@ -1,3 +1,10 @@
+import AboutSection from "@/components/AboutSection";
+import ContactSection from "@/components/ContactSection";
+import HeroSection from "@/components/HeroSection";
+import { HireUsSection } from "@/components/HireUsSection";
+import OurServicesSection from "@/components/OurServicesSection";
+import { TestimonialsSection } from "@/components/TestimonialsSection";
+import TextMoving from "@/components/TextMoving";
 import ImageFallback from "@/helpers/ImageFallback";
 import { getListPage } from "@/lib/contentParser";
 import { markdownify } from "@/lib/utils/textConverter";
@@ -5,6 +12,7 @@ import CallToAction from "@/partials/CallToAction";
 import SeoMeta from "@/partials/SeoMeta";
 import Testimonials from "@/partials/Testimonials";
 import { Button, Feature } from "@/types";
+import { AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { FaCheck } from "react-icons/fa";
 
@@ -24,7 +32,29 @@ const Home = () => {
   return (
     <>
       <SeoMeta />
-      <section className="section pt-14">
+      {/* Hero Section */}
+      <section className="h-[80vh] w-full ">
+        <HeroSection/>
+      </section>
+
+      <section className="flex items-center mt-10 overflow-hidden">
+        <HireUsSection/>
+      </section>
+
+      <section className="overflow-hidden">
+        <AboutSection/>
+      </section>
+
+      <section className="overflow-hidden">
+        <OurServicesSection/>
+      </section>
+
+      <section className="overflow-hidden">
+        <TestimonialsSection/>
+      </section>
+
+
+      {/* <section className="section pt-14">
         <div className="container">
           <div className="row justify-center">
             <div className="lg:col-7 md:col-9 mb-8 text-center">
@@ -63,9 +93,12 @@ const Home = () => {
             )}
           </div>
         </div>
-      </section>
+      </section> */}
+      {/* /Hero Section */}
 
-      {features.map((feature, index: number) => (
+      {/* Features Section */}
+
+      {/* {features.map((feature, index: number) => (
         <section
           key={index}
           className={`section-sm ${index % 2 === 0 && "bg-gradient"}`}
@@ -117,9 +150,14 @@ const Home = () => {
             </div>
           </div>
         </section>
-      ))}
+      ))} */}
+      {/* /Features Section */}
 
-      <Testimonials data={testimonial} />
+      {/* <Testimonials data={testimonial} /> */}
+      <section>
+        <ContactSection/>
+      </section>
+      {/* <section */}
       <CallToAction data={callToAction} />
     </>
   );

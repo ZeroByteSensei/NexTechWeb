@@ -47,10 +47,14 @@ export default function RootLayout({
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
-        <link
+        {/* <link
           href={`https://fonts.googleapis.com/css2?family=${pf}${
             sf ? "&family=" + sf : ""
           }&display=swap`}
+          rel="stylesheet"
+        /> */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap"
           rel="stylesheet"
         />
       </head>
@@ -60,7 +64,7 @@ export default function RootLayout({
         <Providers>
           <Header />
           <SearchModal />
-          <main>{children}</main>
+          <main className="pt-[78px]">{children}</main>
           <Footer />
         </Providers>
       </body>
