@@ -90,9 +90,9 @@ const HeroSection = () => {
                     <Span title="EVERYDAY"/>    
             </div> */}
             <section className="w-full relative">
-                <ParallaxText baseVelocity={-2} color="text-red-400" marginT="-mt-20">BUILDING</ParallaxText>
-                <ParallaxText baseVelocity={2} color="text-yellow-400" marginT="-mt-32">TRUST</ParallaxText>
-                <ParallaxText baseVelocity={-2} color="text-blue-400" marginT="-mt-32">EVERYDAY</ParallaxText>
+                <ParallaxText baseVelocity={-1} color="text-red-400" marginT="-mt-20">BUILDING</ParallaxText>
+                <ParallaxText baseVelocity={1} color="text-yellow-400" marginT="-mt-32">TRUST</ParallaxText>
+                <ParallaxText baseVelocity={-1} color="text-blue-400" marginT="-mt-32">EVERYDAY</ParallaxText>
             </section>
     </div>
   );
