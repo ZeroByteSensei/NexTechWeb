@@ -104,17 +104,16 @@ const Header = () => {
                 exit="initial"
                 className="flex flex-col h-full justify-center font-lora items-center gap-4 "
               >
-                {navLinks.map((link, index) => {
-                  return (
-                    <div className="overflow-hidden">
+                {navLinks.map((link, index) => (
+                    <div className="overflow-hidden" key={index}>
                       <MobileNavLink
                         key={index}
                         title={link.title}
                         href={link.href}
                       />
                     </div>
-                  );
-                })}
+                  )
+                )}
               </motion.div>
             </div>
           </motion.div>
