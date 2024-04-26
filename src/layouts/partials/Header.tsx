@@ -4,6 +4,7 @@ import Link from "next/link";
 import {useState } from "react";
 import AnimatedLink from "./AnimatedLink";
 import { AnimatePresence, motion } from "framer-motion";
+import { useActivePath } from "@/helpers/useActivePath";
 
 const navLinks = [
   { title: "Visit Home", href: "/" },
@@ -12,11 +13,20 @@ const navLinks = [
   { title: "Our Blogs", href: "/" },
   { title: "Get In Touch", href: "/" },
 ];
+const navigation = [
+  { href: '/', name: 'Home' },
+  { href: '/courses', name: 'Courses' },
+  { href: '/contact', name: 'Contact' },
+]
+
+
 const Header = () => {
   const [open, setOpen] = useState(false);
   const toggleMenu = () => {
     setOpen((prevOpen) => !prevOpen);
   };
+  const checkActivePath = useActivePath()
+
   const menuVars = {
     initial: {
       scaleY: 0,
@@ -52,27 +62,26 @@ const Header = () => {
       },
     },
   };
+  // colors: yellow: #FBDC6D, Blue: #1B1E49, Red: #D02727
 
   return (
-    <header className="bg-gray-200 fixed w-full h-[78px] z-50">
+    <header className="bg-[#1B1E49] fixed w-full h-[78px] z-50">
       <nav className="flex justify-between items-center py-4 lg:py-2 px-10">
         <div className="flex items-center gap-[1ch]">
           <div className="w-5 h-5 bg-yellow-400 rounded-full" />
             <span className="text-sm font-semibold tracking-widest">
-              PORTFOLIO
+              NEXTECH-MEDIA
             </span>
         </div>
-        <div className="lg:flex hidden gap-12 text-md text-zinc-400">
-          <Link href="#" className="text-black font-medium">
-            <AnimatedLink title={"Home"} />
-          </Link>
-          <Link href={"/projects"}>
-            <AnimatedLink title={"Courses"} />
-          </Link>
-          <AnimatedLink title={"Contact"} />
+        <div className="lg:flex hidden gap-12 text-md text-[#8e92d5]">
+          {navigation.map(({href, name})=>(
+            <Link key={href} href={href} className={checkActivePath(href) ? 'text-[#c48ed5] font-bold' : ''}>
+              <AnimatedLink title={name} />
+            </Link>
+          ))}
         </div>
         <div
-          className="cursor-pointer text-md text-white hover:bg-black hover:rounded-full px-3 py-5 transition-all"
+          className="cursor-pointer text-md text-white px-3 py-5"
           onClick={toggleMenu}
           >
             <AnimatedLink title="MENU"/>
@@ -85,13 +94,13 @@ const Header = () => {
             initial="initial"
             animate="animate"
             exit="exit"
-            className="fixed left-0 top-0 w-full h-screen origin-top bg-yellow-400 text-black p-10"
+            className="fixed left-0 top-0 w-full h-screen origin-top bg-[#1B1E49] text-[#8e92d5] p-10"
           >
             <div className="flex h-full flex-col">
               <div className="flex justify-between">
-                <h1 className="text-lg text-black">Portfolio</h1>
+                <h1 className="text-lg text-black">NEXTECH-MEDIA</h1>
                 <p
-                  className="cursor-pointer text-md font-bold text-black hover:bg-black hover:rounded-full hover:text-yellow-400 px-3 py-5 transition-all"
+                  className="cursor-pointer text-md font-bold text-[#8e92d5] px-3 py-5 transition-all"
                   onClick={toggleMenu}
                 >
                   <AnimatedLink title="CLOSE"/>
@@ -144,7 +153,7 @@ const MobileNavLink = ({ title, href }:{title:string, href:string}) => {
   return (
     <motion.div
       variants={mobileLinkVars}
-      className="text-5xl uppercase text-black font-bold"
+      className="text-5xl uppercase text-[#8e92d5] font-bold"
     >
       <Link href={href}>
         <AnimatedLink title={title}/>

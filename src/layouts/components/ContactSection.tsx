@@ -4,7 +4,7 @@ const ContactSection = () => {
     return ( 
         <div className="w-full bg-gray-100 overflow-hidden">
             <div className="w-full">
-                <SectionHeader primaryText="CONTACT" secondaryText="US"/>
+                <SectionHeader primaryText="CONTACT" secondaryText="US" classname="contactUs"/>
 
                 <div className="w-full">
                     <div className="relative flex items-top justify-center mb-10 bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">

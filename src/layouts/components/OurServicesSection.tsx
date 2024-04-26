@@ -56,7 +56,7 @@ const OurServicesSection = () => {
     return ( 
         <div className="w-full bg-gray-100">
             <div className="w-full">
-              <SectionHeader primaryText="OUR SERVICES" secondaryText="WHAT DO WE DO"/>
+              <SectionHeader primaryText="OUR SERVICES" secondaryText="WHAT DO WE DO" classname="ourServices"/>
                 <div className="p-10">
                     <StickyScroll content={content} />
                 </div>

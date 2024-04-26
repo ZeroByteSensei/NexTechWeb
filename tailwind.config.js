@@ -116,6 +116,7 @@ module.exports = {
     },
   },
   plugins: [
+    require("tw-elements/plugin.cjs"),
     require('tailwind-scrollbar-hide'),
     require("@tailwindcss/typography"),
     require("@tailwindcss/forms"),
