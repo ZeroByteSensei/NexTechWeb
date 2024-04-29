@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-const SectionHeader = ({primaryText, secondaryText, classname}:{primaryText:string, secondaryText:string, classname:string}) => {
+const SectionHeader = ({primaryText, secondaryText, bgColor='bg-[#8e92d5]'}:{primaryText:string, secondaryText:string, bgColor?:string}) => {
     const headRef= useRef(null);
     const mainRef = useRef(null);
     const descRef = useRef(null);
@@ -42,8 +42,8 @@ const SectionHeader = ({primaryText, secondaryText, classname}:{primaryText:stri
     
     return ( 
         <div className="relative w-full" ref={mainRef}>
-            <p className="text-[14vh] font-bold text-center text-[#292d6e]" ref={headRef}>{primaryText}</p>
-            <p className="absolute top-[40%] font-extrabold left-1 bg-[#8e92d5] w-full text-center text-2xl bg-opacity-70 text-[#292d6e] leading-7" ref={descRef}>{secondaryText}</p>
+            <p className="text-[7vw] font-bold text-center text-[#292d6e]" ref={headRef}>{primaryText}</p>
+            <p className={`absolute top-[40%] font-extrabold left-1 ${bgColor} w-full text-center text-[2vw] bg-opacity-70 text-[#292d6e] leading-8`} ref={descRef}>{secondaryText}</p>
         </div>
      );
 }

@@ -1,4 +1,5 @@
 import DynamicIcon from "@/helpers/DynamicIcon";
+import Link from "next/link";
 
 export interface ISocial {
   name: string;
@@ -24,7 +25,7 @@ const Social = ({
             rel="noopener noreferrer nofollow"
           >
             <span className="sr-only">{social.name}</span>
-            <DynamicIcon className="inline-block" icon={social.icon} />
+            <DynamicIcon className="inline-block" color="#1B1E49" icon={social.icon} />
           </a>
         </li>
       ))}

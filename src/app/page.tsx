@@ -2,9 +2,9 @@ import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
 import HeroSection from "@/components/HeroSection";
 import { HireUsSection } from "@/components/HireUsSection";
+import OurBlogsSection from "@/components/OurBlogsSection";
 import OurServicesSection from "@/components/OurServicesSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
-import TextMoving from "@/components/TextMoving";
 import ImageFallback from "@/helpers/ImageFallback";
 import { getListPage } from "@/lib/contentParser";
 import { markdownify } from "@/lib/utils/textConverter";
@@ -12,9 +12,6 @@ import CallToAction from "@/partials/CallToAction";
 import SeoMeta from "@/partials/SeoMeta";
 import Testimonials from "@/partials/Testimonials";
 import { Button, Feature } from "@/types";
-import { AnimatePresence } from "framer-motion";
-import Link from "next/link";
-import { FaCheck } from "react-icons/fa";
 
 const Home = () => {
   const homepage = getListPage("homepage/_index.md");
@@ -154,10 +151,15 @@ const Home = () => {
       {/* /Features Section */}
 
       {/* <Testimonials data={testimonial} /> */}
-      <section>
+      <section className="contact-section" id="contact-section">
         <ContactSection/>
       </section>
-      {/* <section */}
+      
+      {/* This will be the blog section */}
+      <section>
+        <OurBlogsSection/>
+      </section>
+
       <CallToAction data={callToAction} />
     </>
   );

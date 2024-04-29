@@ -1,12 +1,13 @@
 ---
 title: "How to build an Application with modern Technology"
 meta_title: ""
-description: "this is meta description"
+description: "Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna..."
 date: 2022-04-04T05:00:00Z
-image: "/images/image-placeholder.png"
+image: "https://res.cloudinary.com/dncar4d7j/image/upload/v1705924479/samples/man-on-a-escalator.jpg"
 categories: ["Application", "Data"]
 author: "John Doe"
 tags: ["nextjs", "tailwind"]
+is_featured: true
 draft: false
 ---
 

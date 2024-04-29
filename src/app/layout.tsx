@@ -67,6 +67,9 @@ export default function RootLayout({
           <main className="pt-[78px]">{children}</main>
           <Footer />
         </Providers>
+          <script type="text/javascript" 
+                  src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js">
+          </script>
       </body>
     </html>
   );

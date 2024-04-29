@@ -1,13 +1,20 @@
-"use client";
-
 import { InfiniteMovingCards } from "@/partials/InfiniteMovingCards";
 import SectionHeader from "@/partials/SectionHeader";
-import React, { useEffect, useState } from "react";
 
 export function TestimonialsSection() {
   return (
-    <div className="h-[40rem] rounded-md flex flex-col antialiased bg-[#8e92d5] dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-      <SectionHeader primaryText="TESTIMONIALS" secondaryText="WHAT OUR CLIENTS SAY" classname="testiSection"/>
+    <div className="rounded-md flex flex-col antialiased bg-gray-200 items-center justify-center relative overflow-hidden">
+      <SectionHeader primaryText="TESTIMONIALS" secondaryText="WHAT OUR CLIENTS SAY" bgColor="bg-gray-200"/>
+      <InfiniteMovingCards
+        items={testimonials}
+        direction="right"
+        speed="slow"
+      />
+      <InfiniteMovingCards
+        items={testimonials}
+        direction="left"
+        speed="slow"
+      />
       <InfiniteMovingCards
         items={testimonials}
         direction="right"
@@ -20,13 +27,13 @@ export function TestimonialsSection() {
 const testimonials = [
   {
     quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
+      "All that we see or seem is but a dream within a dream. it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
     name: "Charles Dickens",
     title: "A Tale of Two Cities",
   },
   {
     quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
+      "All that we see or seem is but a dream within a dream.",
     name: "William Shakespeare",
     title: "Hamlet",
   },
@@ -43,7 +50,7 @@ const testimonials = [
   },
   {
     quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
+      "All that we see or seem is but a dream within a dream. I thought I would sail about a little and see the watery part of the world.",
     name: "Herman Melville",
     title: "Moby-Dick",
   },

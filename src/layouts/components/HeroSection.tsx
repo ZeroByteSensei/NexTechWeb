@@ -4,6 +4,7 @@ import { useRef } from "react";
 import {motion, useScroll, useSpring, useTransform, useMotionValue, useVelocity, useAnimationFrame} from "framer-motion";
 import { wrap } from "@motionone/utils";
 import Image from "next/image";
+import Link from "next/link";
 
 interface ParallaxProps {
   children: string;
@@ -38,8 +39,6 @@ function ParallaxText({ children, baseVelocity = 100, color="text-[#848595]", ma
           <span className="text-gray-300 block mr-[70px]">{children} </span>
           <span className="text-gray-300 block mr-[70px]">{children} </span>
           <span className="text-gray-300 block mr-[70px]">{children} </span>
-          {/* <span className={`${color?color:"text-gray-300"} block mr-[70px]`}>{children} </span> */}
-          {/* <span className="text-gray-300 block mr-[70px]">{children} </span> */}
           <span className="text-gray-300 block mr-[70px]">{children} </span>
         </motion.div>
       </div>
@@ -52,19 +51,21 @@ const HeroSection = () => {
     <div className="h-[90vh] max-w-[100%] overflow-x-hidden overflow-y-hidden relative bg-[#fdfdfd]">
 
         <div className="h-full w-full absolute z-30 flex justify-between items-end pl-8 pr-10 pb-24">
-            <div className="text-[#232429] font-grotesk font-extrabold text-[11vh] leading-[80px] w-[70%] ">
-                We Help <span className="text-[#D02727]">BRANDS</span> <br />Become <span className="text-[#5e296e]">BRANDS</span>
+            <div className="text-[#232429] font-grotesk font-extrabold text-[11vw] md:text-[11vh] leading-[80px] w-[70%] ">
+                We Help <span className="text-[#D02727]">Brands</span> <br />Become <span className="text-[#5e296e]">BRANDS</span>
                 <br />
-                <p className="text-lg font-grotesk text-gray-600">
+                <p className="text-sm md:text-lg font-grotesk text-gray-600">
                     With our expertise and experience in the social media domain, <br />we make the effort worth every penny...
                 </p>
             </div>
-            <div className="text-black animate-pulse">
+            <div className="text-black animate-pulse bg-[#1B1E49] rounded-full p-1">
+              <Link href="#contact-section">
                 <Image
                 alt="Schedule A Call"
-                width={100}
-                height={100}
+                width={80}
+                height={80}
                 src="/images/schedulecall-nextech.png"/>
+              </Link>
             </div>
         </div>
 

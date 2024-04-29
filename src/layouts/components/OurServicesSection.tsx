@@ -54,9 +54,9 @@ const content = [
   ];
 const OurServicesSection = () => {
     return ( 
-        <div className="w-full bg-gray-100">
+        <div className="w-full bg-[#8e92d5]">
             <div className="w-full">
-              <SectionHeader primaryText="OUR SERVICES" secondaryText="WHAT DO WE DO" classname="ourServices"/>
+              <SectionHeader primaryText="OUR SERVICES" secondaryText="WHAT DO WE DO" />
                 <div className="p-10">
                     <StickyScroll content={content} />
                 </div>

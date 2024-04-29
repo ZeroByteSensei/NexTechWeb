@@ -5,13 +5,16 @@ import {useState } from "react";
 import AnimatedLink from "./AnimatedLink";
 import { AnimatePresence, motion } from "framer-motion";
 import { useActivePath } from "@/helpers/useActivePath";
+import Social from "@/components/Social";
+import social from "@/config/social.json";
+
 
 const navLinks = [
   { title: "Visit Home", href: "/" },
-  { title: "Our Courses", href: "/" },
-  { title: "Know About Us", href: "/" },
-  { title: "Our Blogs", href: "/" },
-  { title: "Get In Touch", href: "/" },
+  { title: "Our Courses", href: "/courses" },
+  { title: "Know About Us", href: "/about-us" },
+  { title: "Our Blogs", href: "/blog" },
+  { title: "Get In Touch", href: "/contact" },
 ];
 const navigation = [
   { href: '/', name: 'Home' },
@@ -25,7 +28,7 @@ const Header = () => {
   const toggleMenu = () => {
     setOpen((prevOpen) => !prevOpen);
   };
-  const checkActivePath = useActivePath()
+  const checkActivePathNav = useActivePath();
 
   const menuVars = {
     initial: {
@@ -73,15 +76,15 @@ const Header = () => {
               NEXTECH-MEDIA
             </span>
         </div>
-        <div className="lg:flex hidden gap-12 text-md text-[#8e92d5]">
+        <div className="lg:flex hidden gap-12 text-md text-[#FBDC6D]">
           {navigation.map(({href, name})=>(
-            <Link key={href} href={href} className={checkActivePath(href) ? 'text-[#c48ed5] font-bold' : ''}>
+            <Link key={href} href={href} className={checkActivePathNav(href) ? 'text-[#8e92d5] font-bold' : ''}>
               <AnimatedLink title={name} />
             </Link>
           ))}
         </div>
         <div
-          className="cursor-pointer text-md text-white px-3 py-5"
+          className="cursor-pointer text-md text-[#FBDC6D] px-3 py-5"
           onClick={toggleMenu}
           >
             <AnimatedLink title="MENU"/>
@@ -100,7 +103,7 @@ const Header = () => {
               <div className="flex justify-between">
                 <h1 className="text-lg text-black">NEXTECH-MEDIA</h1>
                 <p
-                  className="cursor-pointer text-md font-bold text-[#8e92d5] px-3 py-5 transition-all"
+                  className="cursor-pointer text-md font-bold text-[#FBDC6D] px-3 py-5 transition-all"
                   onClick={toggleMenu}
                 >
                   <AnimatedLink title="CLOSE"/>
@@ -124,6 +127,12 @@ const Header = () => {
                   )
                 )}
               </motion.div>
+              <div className="flex justify-between">
+                <Social source={social.main} className="social-icons"/>
+                <div>
+                  <p className="text-[#FBDC6D] text-lg">contact@nextechmedia.co.in</p>
+                </div>
+              </div>
             </div>
           </motion.div>
         )}
@@ -150,12 +159,14 @@ const mobileLinkVars = {
   },
 };
 const MobileNavLink = ({ title, href }:{title:string, href:string}) => {
+  const checkActivePathMenu = useActivePath();
+
   return (
     <motion.div
       variants={mobileLinkVars}
-      className="text-5xl uppercase text-[#8e92d5] font-bold"
+      className="text-5xl uppercase text-[#FBDC6D] font-bold"
     >
-      <Link href={href}>
+      <Link href={href} className={checkActivePathMenu(href) ? 'text-[#8e92d5] font-bold' : ''}>
         <AnimatedLink title={title}/>
       </Link>
     </motion.div>

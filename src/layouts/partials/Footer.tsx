@@ -12,7 +12,7 @@ const Footer = () => {
   const { copyright } = config.params;
 
   return (
-    <footer className="bg-theme-light dark:bg-darkmode-theme-light">
+    <footer className="bg-[#1B1E49]">
       <div className="container">
         <div className="row items-center py-6">
           <div className="mb-8 text-center lg:col-3 lg:mb-0 lg:text-left">
@@ -21,7 +21,7 @@ const Footer = () => {
           <div className="mb-8 text-center lg:col-6 lg:mb-0">
             <ul>
               {menu.footer.map((menu) => (
-                <li className="m-3 inline-block" key={menu.name}>
+                <li className="m-3 inline-block text-[#FBDC6D]" key={menu.name}>
                   <Link href={menu.url}>{menu.name}</Link>
                 </li>
               ))}
@@ -32,9 +32,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="border-t border-border py-3 dark:border-darkmode-border">
-        <div className="container text-center text-light dark:text-darkmode-light">
+      <div className="border-t border-border py-3">
+        <div className="container flex justify-between text-[#FBDC6D]">
           <p dangerouslySetInnerHTML={markdownify(copyright)} />
+          <p>&#169; Copyright 2024 - NexTech Media</p>
         </div>
       </div>
     </footer>

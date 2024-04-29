@@ -11,7 +11,7 @@ const AnimatedLink = ({title}:{title:string}) => {
             className="relative overflow-hidden cursor-pointer"
         >
             <AnimatedWord title={title} animation={letterAnimation} isHovered={isHovered} />
-            <div className="absolute top-0 text-[#c48ed5]">
+            <div className="absolute top-0 text-[#8e92d5]">
                 <AnimatedWord title={title} animation={letterAnimationTwo} isHovered={isHovered} />
             </div>
         </motion.div>

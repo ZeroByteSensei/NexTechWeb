@@ -21,6 +21,7 @@ export type Post = {
     author: string;
     tags: string[];
     date?: string;
+    is_featured:boolean;
     draft?: boolean;
   };
   slug?: string;

@@ -8,6 +8,7 @@ import PageHeader from "@/partials/PageHeader";
 import PostSidebar from "@/partials/PostSidebar";
 import SeoMeta from "@/partials/SeoMeta";
 import { Post } from "@/types";
+
 const { blog_folder, pagination } = config.settings;
 
 // for all regular pages
@@ -21,6 +22,11 @@ const Posts = () => {
   const sortedPosts = sortByDate(posts);
   const totalPages = Math.ceil(posts.length / pagination);
   const currentPosts = sortedPosts.slice(0, pagination);
+
+  const featuredPosts = posts.filter((post, index)=>(
+    post.frontmatter.is_featured==true
+  ))
+  console.log(featuredPosts, "featured here",);
 
   return (
     <>
