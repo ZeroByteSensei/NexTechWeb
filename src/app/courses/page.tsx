@@ -1,5 +1,6 @@
 'use client'
 import SectionHeader from "@/partials/SectionHeader";
+import Image from "next/image";
 import { useState } from "react";
 
 const Courses = () => {
@@ -37,7 +38,7 @@ const Courses = () => {
                 {courses.map((course, index)=>(
                     <div key={index} className="w-full px-4 md:w-1/2 xl:w-1/3">
                         <div className="mb-10 overflow-hidden duration-300 bg-white rounded-lg dark:bg-dark-2 shadow-1 hover:shadow-3 dark:shadow-card dark:hover:shadow-3">
-                        <img src={course.CourseImg} alt="Course-Image" className="w-full"/>
+                        <Image src={course.CourseImg} alt="Course-Image" className="w-full"/>
                         <div className="p-8 text-center sm:p-9 md:p-7 xl:p-9">
                             <h3>
                                 <p className="text-dark dark:text-white hover:text-primary mb-4 block text-xl font-semibold sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px]" >
