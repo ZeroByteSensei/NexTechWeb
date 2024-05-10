@@ -41,7 +41,7 @@ const SectionHeader = ({primaryText, secondaryText, bgColor='bg-[#8e92d5]'}:{pri
     }, [])
     
     return ( 
-        <div className="relative w-full" ref={mainRef}>
+        <div className="relative w-full overflow-hidden" ref={mainRef}>
             <p className="text-[7vw] font-bold text-center text-[#292d6e]" ref={headRef}>{primaryText}</p>
             <p className={`absolute top-[40%] font-extrabold left-1 ${bgColor} w-full text-center text-[2vw] bg-opacity-70 text-[#292d6e] leading-8`} ref={descRef}>{secondaryText}</p>
         </div>

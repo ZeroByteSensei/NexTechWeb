@@ -1,6 +1,7 @@
 import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
 import HeroSection from "@/components/HeroSection";
+import HeroSectionStatic from "@/components/HeroSectionStatic";
 import { HireUsSection } from "@/components/HireUsSection";
 import OurBlogsSection from "@/components/OurBlogsSection";
 import OurServicesSection from "@/components/OurServicesSection";
@@ -30,8 +31,9 @@ const Home = () => {
     <>
       <SeoMeta />
       {/* Hero Section */}
-      <section className="h-[80vh] w-full ">
-        <HeroSection/>
+      <section className="w-full aspect-[8/16] lg:aspect-[16/8]">
+        {/* <HeroSection/>  This is the moving hero section */}
+        <HeroSectionStatic/>
       </section>
 
       <section className="flex items-center mt-10 overflow-hidden">

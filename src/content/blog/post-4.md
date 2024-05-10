@@ -7,7 +7,7 @@ image: "/images/image-placeholder.png"
 categories: ["Architecture"]
 author: "John Doe"
 tags: ["silicon", "technology"]
-is_featured: true
+is_featured: false
 draft: false
 ---
 

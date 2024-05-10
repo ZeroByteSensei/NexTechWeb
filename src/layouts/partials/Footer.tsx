@@ -35,7 +35,7 @@ const Footer = () => {
       <div className="border-t border-border py-3">
         <div className="container flex justify-between text-[#FBDC6D]">
           <p dangerouslySetInnerHTML={markdownify(copyright)} />
-          <p>&#169; Copyright 2024 - NexTech Media</p>
+          <p>&#169; Copyright 2023 - NexTech Media</p>
         </div>
       </div>
     </footer>

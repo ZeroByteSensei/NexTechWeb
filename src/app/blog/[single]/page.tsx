@@ -62,10 +62,11 @@ const PostSingle = ({ params }: { params: { single: string } }) => {
                 <div className="mb-10">
                   <ImageFallback
                     src={image}
-                    height={500}
-                    width={1200}
+                    height={300}
+                    width={500}
                     alt={title}
-                    className="w-full rounded"
+                    style={{objectFit:"cover"}}
+                    className="w-full aspect-[2/1] rounded"
                   />
                 </div>
               )}

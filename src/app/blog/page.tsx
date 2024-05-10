@@ -23,10 +23,10 @@ const Posts = () => {
   const totalPages = Math.ceil(posts.length / pagination);
   const currentPosts = sortedPosts.slice(0, pagination);
 
-  const featuredPosts = posts.filter((post, index)=>(
-    post.frontmatter.is_featured==true
-  ))
-  console.log(featuredPosts, "featured here",);
+  // const featuredPosts = posts.filter((post, index)=>(
+  //   post.frontmatter.is_featured==true
+  // ))
+  // console.log(featuredPosts, "featured here",);
 
   return (
     <>

@@ -11,6 +11,7 @@ import social from "@/config/social.json";
 
 const navLinks = [
   { title: "Visit Home", href: "/" },
+  { title: "Our Services", href: "/services" },
   { title: "Our Courses", href: "/courses" },
   { title: "Know About Us", href: "/about-us" },
   { title: "Our Blogs", href: "/blog" },
@@ -18,6 +19,7 @@ const navLinks = [
 ];
 const navigation = [
   { href: '/', name: 'Home' },
+  { href: '/services', name: 'Services' },
   { href: '/courses', name: 'Courses' },
   { href: '/contact', name: 'Contact' },
 ]
@@ -117,7 +119,7 @@ const Header = () => {
                 className="flex flex-col h-full justify-center font-lora items-center gap-4 "
               >
                 {navLinks.map((link, index) => (
-                    <div className="overflow-hidden" key={index}>
+                    <div className="overflow-hidden" key={index} onClick={toggleMenu}>
                       <MobileNavLink
                         key={index}
                         title={link.title}
@@ -166,7 +168,7 @@ const MobileNavLink = ({ title, href }:{title:string, href:string}) => {
       variants={mobileLinkVars}
       className="text-5xl uppercase text-[#FBDC6D] font-bold"
     >
-      <Link href={href} className={checkActivePathMenu(href) ? 'text-[#8e92d5] font-bold' : ''}>
+      <Link href={href} className={checkActivePathMenu(href) ? 'text-[#8e92d5] font-bold' : ''} >
         <AnimatedLink title={title}/>
       </Link>
     </motion.div>

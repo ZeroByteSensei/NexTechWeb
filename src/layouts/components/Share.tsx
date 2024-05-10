@@ -24,7 +24,7 @@ const Share = ({
       <li className="inline-block">
         <a
           aria-label="facebook share button"
-          href={`https://facebook.com/sharer/sharer.php?u=${base_url}/${slug}`}
+          href={`https://facebook.com/sharer/sharer.php?u=${base_url}/blog/${slug}`}
           target="_blank"
           rel="noreferrer noopener"
         >

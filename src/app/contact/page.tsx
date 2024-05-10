@@ -966,6 +966,7 @@ const Contact = async () => {
               </div>
             </div>
         </div>
+        <iframe width="800" height="600" allow="clipboard-write;camera;geolocation;fullscreen" src="https://companyform.budibase.app/embed/company-contact-form"></iframe>
       </section>
     </>
   );
