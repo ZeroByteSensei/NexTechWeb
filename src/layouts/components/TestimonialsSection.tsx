@@ -1,22 +1,35 @@
 import { InfiniteMovingCards } from "@/partials/InfiniteMovingCards";
 import SectionHeader from "@/partials/SectionHeader";
+import { Testimonial } from "@/types";
 
-export function TestimonialsSection() {
+interface PageData {
+  notFound?: boolean;
+  content?: string;
+  frontmatter: {
+    enable?: boolean;
+    title: string;
+    description?: string;
+    testimonials: Array<Testimonial>;
+  };
+}
+
+
+export function TestimonialsSection({data}:{data:PageData}) {
   return (
-    <div className="rounded-md flex flex-col antialiased bg-gray-200 items-center justify-center relative overflow-hidden">
-      <SectionHeader primaryText="TESTIMONIALS" secondaryText="WHAT OUR CLIENTS SAY" bgColor="bg-gray-200"/>
+    <div className="rounded-md flex flex-col antialiased bg-[#1B1E49] items-center justify-center relative overflow-hidden py-14">
+      <SectionHeader primaryText="TESTIMONIALS" secondaryText="what our clients say" bgColor="bg-[#1B1E49]" textColor="text-[#8e92d5]"/>
       <InfiniteMovingCards
-        items={testimonials}
+        items={data.frontmatter.testimonials}
         direction="right"
         speed="slow"
       />
       <InfiniteMovingCards
-        items={testimonials}
+        items={data.frontmatter.testimonials}
         direction="left"
         speed="slow"
       />
       <InfiniteMovingCards
-        items={testimonials}
+        items={data.frontmatter.testimonials}
         direction="right"
         speed="slow"
       />

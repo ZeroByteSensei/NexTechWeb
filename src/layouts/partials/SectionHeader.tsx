@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-const SectionHeader = ({primaryText, secondaryText, bgColor='bg-[#8e92d5]'}:{primaryText:string, secondaryText:string, bgColor?:string}) => {
+const SectionHeader = ({primaryText, secondaryText, bgColor='bg-[#8e92d5]', textColor='text-[#292d6e]'}:{primaryText:string, secondaryText:string, bgColor?:string, textColor?:string}) => {
     const headRef= useRef(null);
     const mainRef = useRef(null);
     const descRef = useRef(null);
@@ -42,8 +42,8 @@ const SectionHeader = ({primaryText, secondaryText, bgColor='bg-[#8e92d5]'}:{pri
     
     return ( 
         <div className="relative w-full overflow-hidden" ref={mainRef}>
-            <p className="text-[7vw] font-bold text-center text-[#292d6e]" ref={headRef}>{primaryText}</p>
-            <p className={`absolute top-[40%] font-extrabold left-1 ${bgColor} w-full text-center text-[2vw] bg-opacity-70 text-[#292d6e] leading-8`} ref={descRef}>{secondaryText}</p>
+            <p className={`text-[7vh] sm:text-[7vw] font-bold text-center ${textColor}`} ref={headRef}>{primaryText}</p>
+            <p className={`absolute top-[40%] font-extrabold left-1 ${bgColor} w-full text-center text-[2vh] sm:text-[2vw] bg-opacity-70 ${textColor} leading-8`} ref={descRef}>{secondaryText}</p>
         </div>
      );
 }

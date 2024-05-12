@@ -1,28 +1,13 @@
-"use client";
+import Link from "next/link";
 import React from "react";
-import {
-  TextRevealCard,
-  TextRevealCardDescription,
-  TextRevealCardTitle,
-} from "../partials/TextRevealCard";
 
 export function HireUsSection() {
   return (
-    <div className="flex items-center justify-around h-[20rem] mt-8 rounded-2xl w-full">
-      <p className="-rotate-90 text-3xl font-extrabold text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">HOVER</p>
-      <TextRevealCard
-        text="Why Tire Up yourself with the work"
-        revealText="When You Can Have Us Instead"
-      >
-        <TextRevealCardTitle>
-          Sometimes, you just need to see it.
-        </TextRevealCardTitle>
-        <TextRevealCardDescription>
-          This is a text reveal card. Hover over the card to reveal the hidden
-          text.
-        </TextRevealCardDescription>
-      </TextRevealCard>
-      <p className="rotate-90 text-3xl font-extrabold text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">HOVER</p>
+    <div className="w-full max-w-[1760px] bg-[#1B1E49] aspect-[16/3] py-4">
+      <Link href="/">
+        <div className="w-full h-full text-center text-white text-2xl animate-pulse"
+          style={{backgroundImage:"url(https://res.cloudinary.com/dncar4d7j/image/upload/v1715523709/adImage_o73gro.png)", backgroundSize:"cover"}}/>
+      </Link>
     </div>
   );
 }

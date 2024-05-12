@@ -3,8 +3,8 @@ import SectionHeader from "@/partials/SectionHeader";
 
 const ContactSection = () => {
     return ( 
-        <div className="w-full bg-[#8e92d5] overflow-hidden pb-8">
-        <SectionHeader primaryText="CONTACT US" secondaryText="Let's hop on a call" bgColor="bg-[#8e92d5]"/>
+        <div className="w-full bg-[#181818] overflow-hidden py-16">
+        <SectionHeader primaryText="CONTACT US" secondaryText="Let's hop on a call" bgColor="bg-[#181818]" textColor="text-[#8e92d5]"/>
             <div className="w-full grid grid-cols-6 px-3 py-4 gap-y-4">
                 <div className="p-6 mr-2 bg-gray-100 rounded-md sm:rounded-lg col-span-6 md:col-span-2">
                     <h1 className="text-3xl sm:text-4xl text-[#1B1E49] dark:text-white font-extrabold tracking-tight">

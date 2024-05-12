@@ -69,7 +69,7 @@ const content = [
         ),
     },
     {
-      title: "WordPress/CMS Development",
+      title: "WORDPRESS/CMS DEVELOPMENT",
       description:
         "We crafts top-tier websites that embody your brand essence. We excel in delivering a spectrum of web development services, ensuring user-friendly designs, robust functionality, and seamless experiences. Elevate your online presence with NexTech's expertise and innovation. You focus on what you do best, and let us do the rest. You focus on what you do best, and let us do the rest.",
         content: (

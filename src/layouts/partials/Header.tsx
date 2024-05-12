@@ -7,6 +7,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useActivePath } from "@/helpers/useActivePath";
 import Social from "@/components/Social";
 import social from "@/config/social.json";
+import Logo from "@/components/Logo";
 
 
 const navLinks = [
@@ -71,11 +72,11 @@ const Header = () => {
 
   return (
     <header className="bg-[#1B1E49] fixed w-full h-[78px] z-50">
-      <nav className="flex justify-between items-center py-4 lg:py-2 px-10">
-        <div className="flex items-center gap-[1ch]">
-          <div className="w-5 h-5 bg-yellow-400 rounded-full" />
+      <nav className="flex justify-between items-center py-4 lg:py-0 px-10">
+        <div className="flex items-center">
+          {/* <div className="w-5 h-5 bg-yellow-400 rounded-full" /> */}
             <span className="text-sm font-semibold tracking-widest">
-              NEXTECH-MEDIA
+              <Logo/>
             </span>
         </div>
         <div className="lg:flex hidden gap-12 text-md text-[#FBDC6D]">
@@ -103,7 +104,7 @@ const Header = () => {
           >
             <div className="flex h-full flex-col">
               <div className="flex justify-between">
-                <h1 className="text-lg text-black">NEXTECH-MEDIA</h1>
+                <Logo/>
                 <p
                   className="cursor-pointer text-md font-bold text-[#FBDC6D] px-3 py-5 transition-all"
                   onClick={toggleMenu}
@@ -174,3 +175,6 @@ const MobileNavLink = ({ title, href }:{title:string, href:string}) => {
     </motion.div>
   );
 };
+
+
+

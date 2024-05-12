@@ -18,18 +18,18 @@ const OurBlogsSection = () => {
     //   console.log(featuredPosts, "featured here");
 
     return ( 
-        <div className="bg-gray-100 pb-12">
-            <SectionHeader primaryText="OUR BLOGS" secondaryText="Explore the latest" bgColor="bg-gray-100"/>
-            <div className="flex flex-col sm:flex-row w-full gap-x-4 px-6 justify-center">
+        <div className="bg-[#1B1E49] py-20">
+            <SectionHeader primaryText="OUR BLOGS" secondaryText="Explore the latest" bgColor="bg-[#1B1E49]" textColor="text-[#8e92d5]"/>
+            <div className="flex flex-col items-center sm:flex-row w-full gap-y-6 px-6 my-10 justify-center">
                 {featuredPosts.map((featuredPost, index)=>(
                     <BlogCard key={index} data={featuredPost} blog_folder={blog_folder} />
                 ))}
                 <div className="flex flex-col ml-4 group h-fit w-fit my-auto cursor-pointer">
                     <Link href="/blog">
-                        <div className="bg-[#1B1E49] rounded-full h-fit w-fit p-4 group-hover:scale-110 duration-500">
-                            <FaArrowRight color="#FBDC6D" size={24}/>
+                        <div className="bg-[#FBDC6D] rounded-full h-fit w-fit p-4 group-hover:scale-110 duration-500">
+                            <FaArrowRight color="#1B1E49" size={24}/>
                         </div>
-                        <p className="text-[#1B1E49] group-hover:scale-110 duration-500">View All</p>
+                        <p className="text-[#FBDC6D] group-hover:scale-110 duration-500">View All</p>
                     </Link>
                 </div>
             </div>

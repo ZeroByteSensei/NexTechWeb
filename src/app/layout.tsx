@@ -57,6 +57,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap"
           rel="stylesheet"
         />
+        <script async src="https://tally.so/widgets/embed.js"></script>
       </head>
 
       <body suppressHydrationWarning={true}>
@@ -64,7 +65,7 @@ export default function RootLayout({
         <Providers>
           <Header />
           <SearchModal />
-          <main className="pt-[78px]">{children}</main>
+          <main className="pt-[78px] bg-[#181818]">{children}</main>
           <Footer />
         </Providers>
       </body>

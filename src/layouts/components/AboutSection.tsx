@@ -4,9 +4,9 @@ import SectionHeader from "@/partials/SectionHeader";
 
 const AboutSection = () => {
     return ( 
-        <div className="w-full bg-gray-100">
+        <div className="w-full bg-[#181818]">
             <div className="w-full">
-                <SectionHeader primaryText="ABOUT" secondaryText="US" bgColor="bg-gray-100"/>
+                <SectionHeader primaryText="ABOUT" secondaryText="US" bgColor="bg-[#181818]" textColor="text-[#8e92d5]"/>
                 <div className="grid grid-cols-4 grid-rows-3 w-full h-[70vh] gap-3 px-6 py-3">
                     <div className="col-span-4 row-span-1 p-3 bg-gray-200 rounded-md">
                         <p>

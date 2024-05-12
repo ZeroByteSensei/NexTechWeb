@@ -4,6 +4,7 @@ import HeroSection from "@/components/HeroSection";
 import HeroSectionStatic from "@/components/HeroSectionStatic";
 import { HireUsSection } from "@/components/HireUsSection";
 import OurBlogsSection from "@/components/OurBlogsSection";
+import OurServicesParallax from "@/components/OurServicesParallax";
 import OurServicesSection from "@/components/OurServicesSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import ImageFallback from "@/helpers/ImageFallback";
@@ -36,7 +37,7 @@ const Home = () => {
         <HeroSectionStatic/>
       </section>
 
-      <section className="flex items-center mt-10 overflow-hidden">
+      <section className="">
         <HireUsSection/>
       </section>
 
@@ -44,13 +45,27 @@ const Home = () => {
         <AboutSection/>
       </section>
 
-      <section className="overflow-hidden">
+      {/* <section className="overflow-hidden">
         <OurServicesSection/>
+      </section> */}
+      <section className="">
+        <OurServicesParallax/>
       </section>
 
-      <section className="overflow-hidden">
-        <TestimonialsSection/>
+      <section className="contact-section" id="contact-section">
+        <ContactSection/>
       </section>
+
+      <section>
+        <OurBlogsSection/>
+      </section>
+
+
+      <section className="overflow-hidden">
+        <TestimonialsSection data={testimonial}/>
+      </section>
+
+      <CallToAction data={callToAction} />
 
 
       {/* <section className="section pt-14">
@@ -153,16 +168,10 @@ const Home = () => {
       {/* /Features Section */}
 
       {/* <Testimonials data={testimonial} /> */}
-      <section className="contact-section" id="contact-section">
-        <ContactSection/>
-      </section>
+      
       
       {/* This will be the blog section */}
-      <section>
-        <OurBlogsSection/>
-      </section>
-
-      <CallToAction data={callToAction} />
+      
     </>
   );
 };

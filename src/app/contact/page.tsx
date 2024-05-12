@@ -1,23 +1,25 @@
-import config from "@/config/config.json";
-import { getListPage } from "@/lib/contentParser";
-import PageHeader from "@/partials/PageHeader";
+'use client'
 import SectionHeader from "@/partials/SectionHeader";
 import SeoMeta from "@/partials/SeoMeta";
-import { RegularPage } from "@/types";
+import Script from "next/script";
+import { useEffect, useState } from "react";
 
-const Contact = async () => {
-  const data: RegularPage = getListPage("contact/_index.md");
-  const { frontmatter } = data;
-  const { title, description, meta_title, image } = frontmatter;
-  const { contact_form_action } = config.params;
+const Contact = () => {
+  const [loaded, setLoaded] = useState(false);
+  useEffect(() => {
+    const scriptTag = document.createElement("script");
+    scriptTag.src = "https://tally.so/widgets/embed.js";
+    scriptTag.addEventListener("load", () => setLoaded(true));
+    document.body.appendChild(scriptTag);
+  }, []);
 
   return (
     <>
       <SeoMeta
-        title={title}
-        meta_title={meta_title}
-        description={description}
-        image={image}
+        title="Contact Page"
+        meta_title="NexTech Media Contact Page"
+        description="This is the contact page for NexTech Media"
+        image="/"
       />
       {/* <PageHeader title={title} /> */}
       
@@ -45,7 +47,7 @@ const Contact = async () => {
                         </div>
                         <div className="w-full">
                           <h4 className="mb-1 text-xl font-bold text-dark">
-                              Our Location
+                              Our Locations
                           </h4>
                           <p className="text-base text-body-color">
                               99 S.t Jomblo Park Pekanbaru 28292. Indonesia
@@ -119,7 +121,7 @@ const Contact = async () => {
               </div>
               <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
                   <div className="relative p-8 bg-white rounded-lg shadow-lg sm:p-12">
-                    <form>
+                    {/* <form>
                         <div className="mb-6">
                           <input
                               type="text"
@@ -153,7 +155,10 @@ const Contact = async () => {
                             Send Message
                           </button>
                         </div>
-                    </form>
+                    </form> */}
+                    <iframe data-tally-src="https://tally.so/embed/w7de8a?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" width="100%" height="284" title="Contact form"></iframe>
+                    <Script id="tally-js" src="https://tally.so/widgets/embed.js"/>  
+
                     <div>
                         <span className="absolute -top-10 -right-9 z-[-1]">
                           <svg
@@ -966,7 +971,6 @@ const Contact = async () => {
               </div>
             </div>
         </div>
-        <iframe width="800" height="600" allow="clipboard-write;camera;geolocation;fullscreen" src="https://companyform.budibase.app/embed/company-contact-form"></iframe>
       </section>
     </>
   );
