@@ -23,7 +23,7 @@ const AboutSection = () => {
                         </div>
                         <div className="col-span-1 w-full h-[40vh] sm:h-full rounded-md"
                         style={{backgroundImage:"url(https://res.cloudinary.com/dncar4d7j/image/upload/v1715703122/about_sk6ha7.webp)", backgroundSize:'cover'}}>
-                            Mariam's pic will be added here
+                            Mariam pic will be added here
                         </div>
 
                         <div className="col-span-1 w-full order-3 h-[40vh] md:h-full rounded-md"

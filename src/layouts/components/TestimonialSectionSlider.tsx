@@ -51,7 +51,7 @@ const TestimonialSectionSlider = ({data}:{data:PageData}) => {
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:items-center lg:gap-16">
                     <div className="max-w-xl text-center sm:text-left ">
                         <h2 className="text-3xl font-bold tracking-tight text-[#D02727] sm:text-4xl">
-                        Don't just take our word for it...
+                        Dont just take our word for it...
                         </h2>
 
                         <p className="mt-4 text-[#FBDC6D]">
