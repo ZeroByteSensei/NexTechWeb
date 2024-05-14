@@ -39,8 +39,7 @@ const HeroSectionStatic = () => {
                 style={{backgroundImage:"url(https://res.cloudinary.com/dncar4d7j/image/upload/v1715357152/HeroSectionDesktopNew_lmw88g.webp)", backgroundSize:"cover",
                 }}
             />
-            <div
-                className="hidden md:block w-[320px] aspect-[8/16] mt-[78px] absolute top-[10%] right-[8%]"
+            <div className="hidden md:block w-[320px] aspect-[8/16] mt-[78px] absolute top-[10%] right-[8%]"
                 style={{backgroundImage:"url(https://res.cloudinary.com/dncar4d7j/image/upload/v1715357145/phoneHeroSection_pvpcvq.png)", backgroundSize:"cover",
                 }}
                 ref={imgRef}

@@ -20,6 +20,7 @@ const navLinks = [
 ];
 const navigation = [
   { href: '/', name: 'Home' },
+  { href: '/about', name: 'About Us' },
   { href: '/services', name: 'Services' },
   { href: '/courses', name: 'Courses' },
   { href: '/contact', name: 'Contact' },
@@ -41,7 +42,6 @@ const Header = () => {
       scaleY: 1,
       transition: {
         duration: 0.5,
-        ease: [0.12, 0, 0.39, 0],
       },
     },
     exit: {
@@ -49,7 +49,6 @@ const Header = () => {
       transition: {
         delay: 0.5,
         duration: 0.5,
-        ease: [0.22, 1, 0.36, 1],
       },
     },
   };
@@ -72,7 +71,7 @@ const Header = () => {
 
   return (
     <header className="bg-[#1B1E49] fixed w-full h-[78px] z-50">
-      <nav className="flex justify-between items-center py-4 lg:py-0 px-10">
+      <nav className="flex justify-between items-center py-4 lg:py-0 lg:px-10">
         <div className="flex items-center">
           {/* <div className="w-5 h-5 bg-yellow-400 rounded-full" /> */}
             <span className="text-sm font-semibold tracking-widest">
@@ -100,7 +99,7 @@ const Header = () => {
             initial="initial"
             animate="animate"
             exit="exit"
-            className="fixed left-0 top-0 w-full h-screen origin-top bg-[#1B1E49] text-[#8e92d5] p-10"
+            className="fixed left-0 top-0 w-full h-screen origin-top bg-[#1B1E49] text-[#8e92d5] pt-4 pr-4"
           >
             <div className="flex h-full flex-col">
               <div className="flex justify-between">
@@ -130,7 +129,7 @@ const Header = () => {
                   )
                 )}
               </motion.div>
-              <div className="flex justify-between">
+              <div className="flex flex-col md:flex-row gap-y-8 md:justify-between md:px-4 md:pb-8">
                 <Social source={social.main} className="social-icons"/>
                 <div>
                   <p className="text-[#FBDC6D] text-lg">contact@nextechmedia.co.in</p>

@@ -16,7 +16,7 @@ const Courses = () => {
     const courses=[{
         "Heading":"Pre-recorded Lectures on SMM",
         "Description":"Lorem first ipsum first dolor sit amet first pretium consectetur adipiscing elit. Lorem consectetur adipiscing elit.",
-        "CourseImg":"https://res.cloudinary.com/dncar4d7j/image/upload/v1715360097/7_e8xdat.png",
+        "CourseImg":"https://res.cloudinary.com/dncar4d7j/image/upload/v1715505846/coursesTrainings_xv2xxs.webp",
         "IsAvailable":"false",
         "OriginalPrice":"1,999",
         "FinalPrice":"999",
@@ -25,7 +25,7 @@ const Courses = () => {
     },{
         "Heading":"Introduction to Social Media Management",
         "Description":"Lorem second ipsum second dolor sit amet second pretium consectetur adipiscing elit. Lorem consectetur adipiscing elit.",
-        "CourseImg":"https://res.cloudinary.com/dncar4d7j/image/upload/v1715360097/7_e8xdat.png",
+        "CourseImg":"https://res.cloudinary.com/dncar4d7j/image/upload/v1715505846/coursesTrainings_xv2xxs.webp",
         "IsAvailable":"true",
         "OriginalPrice":"9,999",
         "FinalPrice":"4,999",
@@ -35,7 +35,7 @@ const Courses = () => {
     },{
         "Heading":"Digital Marketing Course For Corporates",
         "Description":"Lorem third ipsum third dolor sit amet third pretium consectetur adipiscing elit. Lorem consectetur adipiscing elit.",
-        "CourseImg":"https://res.cloudinary.com/dncar4d7j/image/upload/v1715360097/7_e8xdat.png",
+        "CourseImg":"https://res.cloudinary.com/dncar4d7j/image/upload/v1715505846/coursesTrainings_xv2xxs.webp",
         "IsAvailable":"true",
         "OriginalPrice":"XX,999",
         "FinalPrice":"X,999",
@@ -46,24 +46,24 @@ const Courses = () => {
 
     return ( 
         <>
-        <SectionHeader primaryText="EXPLORE OUR COURSES" secondaryText="What We Offer" bgColor="bg-white"/>
         {/* colors: yellow: #FBDC6D, Blue: #1B1E49, Red: #D02727 */}
 
-        <section className="bg-gray-2 pt-20 pb-10 lg:pt-[70px] lg:pb-20 overflow-hidden">
-            <div className="container mx-auto">
+        <section className="bg-[#1B1E49] pt-20 pb-10 lg:pt-[30px] lg:pb-20 overflow-hidden">
+        <SectionHeader primaryText="EXPLORE OUR COURSES" secondaryText="What We Offer" bgColor="bg-[#1B1E49]" textColor="text-[#8e92d5]"/>
+            <div className="container mx-auto lg:pt-12">
                 <div className="flex flex-wrap -mx-4">
                     {courses.map((course, index)=>(
                         <div key={index} className="w-full px-4 md:w-1/2 xl:w-1/3 mb-4">
-                            <div className="border border-black rounded-md">
-                                <div className="w-full aspect-[16/9] bg-red-300 rounded-t-md"
+                            <div className="border border-[#1B1E49] rounded-md bg-[#FBDC6D]">
+                                <div className="w-full aspect-[16/9] rounded-t-md"
                                 style={{backgroundImage:`url(${course.CourseImg})`, backgroundSize:"cover"}}/>
 
                                 <div className="border-b border-black mb-4 pb-4 pt-4">
                                     <p className="w-full flex gap-x-4 ml-4"> 
-                                        <span className="border rounded-full text-red-500 px-4">Live Classes</span>
-                                        <span className="border rounded-full text-red-500 px-4">3 months total</span>
+                                        <span className="border border-[#1B1E49] rounded-full text-red-500 px-4">Live Classes</span>
+                                        <span className="border border-[#1B1E49] rounded-full text-red-500 px-4">3 months total</span>
                                     </p>
-                                    <h1 className="text-lg mx-4 mt-3">{course.Heading}</h1>
+                                    <h1 className="text-lg mx-4 mt-3 text-[#1B1E49]">{course.Heading}</h1>
                                 </div>
 
                                 <div className="flex my-2 gap-x-4 ml-4">
@@ -88,7 +88,7 @@ const Courses = () => {
                                     </div>
                                 </div>
 
-                                <p className="w-full px-4 my-4">{course.Description}</p>
+                                <p className="w-full px-4 my-4 text-[#1B1E49]">{course.Description}</p>
 
                                 <p className="w-full ml-4 space-x-2 my-6">
                                     <span className="font-bold text-green-800 text-xl">&#8377;{course.FinalPrice}</span>
@@ -99,12 +99,12 @@ const Courses = () => {
 
 
                                 <div className="w-full flex justify-between px-4 my-6">
-                                    <button onClick={()=>handleTabClick(index)} className={`inline-block py-2 text-[#1B1E49] transition border rounded-md hover:bg-[#1B1E49] hover:text-white hover:border-primary border-gray-3 px-2 font-bold`}>
+                                    <button onClick={()=>handleTabClick(index)} className={`inline-block py-2 text-[#1B1E49] transition border border-[#1B1E49] rounded-md hover:bg-[#1B1E49] hover:text-white hover:border-primary px-2 font-bold`}>
                                             View Course Details
                                     </button>
 
                                     <Link href={`${course.FormLink?course.FormLink:"/"}`}>
-                                        <button disabled={course.IsAvailable=='false'} className={`inline-block py-2 text-base transition bg-[#1B1E49] border rounded-md ${course.IsAvailable=='false'?"text-red-600 font-bold bg-red-200":"hover:bg-green-800 hover:text-white hover:border-primary text-[#FBDC6D] font-medium"}   border-gray-3 px-3 `}>
+                                        <button disabled={course.IsAvailable=='false'} className={`inline-block py-2 text-base transition bg-[#1B1E49] rounded-md ${course.IsAvailable=='false'?"text-red-600 font-bold bg-red-200":"hover:bg-green-800 hover:text-white text-[#FBDC6D] font-medium"} px-3 `}>
                                             {course.IsAvailable=="true"?"Register":"Coming Soon"}
                                         </button>
                                     </Link>

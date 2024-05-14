@@ -50,16 +50,16 @@ export default function OurServicesParallax() {
         ServiceImg: "https://res.cloudinary.com/dncar4d7j/image/upload/v1715505846/coursesTrainings_xv2xxs.webp",    
     },
     {
-      Heading: "WORDPRESS/ CMS DEVELOPMENT",
-      Description:
-        "We specialize in creating top-notch designs that elevate your brand or product. We firmly believe that superior designs yield superior outcomes. Let us take your visuals to the next level for exceptional results. Our expertise ensures professional, attention-grabbing content that resonates with audiences. ",
-        ServiceImg: "https://res.cloudinary.com/dncar4d7j/image/upload/v1715505846/webDevelopment_tmvat9.webp",
-    },
-    {
       Heading: "GRAPHIC DESIGNING & VIDEO EDITING",
       Description:
         "We specialize in creating top-notch designs that elevate your brand or product. We firmly believe that superior designs yield superior outcomes. Let us take your visuals to the next level for exceptional results. Our expertise ensures professional, attention-grabbing content that resonates with audiences. ",
         ServiceImg: "https://res.cloudinary.com/dncar4d7j/image/upload/v1715505846/graphicDesign_pcuv3z.webp",
+    },
+    {
+      Heading: "WORDPRESS/ CMS DEVELOPMENT",
+      Description:
+        "We specialize in creating top-notch designs that elevate your brand or product. We firmly believe that superior designs yield superior outcomes. Let us take your visuals to the next level for exceptional results. Our expertise ensures professional, attention-grabbing content that resonates with audiences. ",
+        ServiceImg: "https://res.cloudinary.com/dncar4d7j/image/upload/v1715505846/webDevelopment_tmvat9.webp",
     },
   ];
 

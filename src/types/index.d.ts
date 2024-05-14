@@ -59,6 +59,7 @@ export type Testimonial = {
   designation: string;
   avatar: string;
   content: string;
+  review:string;
 };
 
 export type Call_to_action = {

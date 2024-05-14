@@ -40,7 +40,7 @@ const Logo = ({ src }: { src?: string }) => {
         <Image
           width={logo_width.replace("px", "") * 2}
           height={logo_height.replace("px", "") * 2}
-          src="https://res.cloudinary.com/dncar4d7j/image/upload/v1715509023/NexTechLogoBig_xmvzk2.svg"
+          src="https://res.cloudinary.com/dncar4d7j/image/upload/v1715684700/NexTechLogoBig_xmvzk2.png"
           alt={title}
           priority
           style={{

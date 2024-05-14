@@ -12,7 +12,7 @@ const Footer = () => {
   const { copyright } = config.params;
 
   return (
-    <footer className="bg-[#1B1E49]">
+    <footer className="bg-[#1B1E49] border-t-2 border-[#FBDC6D]">
       <div className="container">
         <div className="row items-center py-6">
           <div className="mb-8 text-center lg:col-3 lg:mb-0 lg:text-left">
@@ -32,8 +32,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="border-t border-border py-3">
-        <div className="container flex justify-between text-[#FBDC6D]">
+      <div className="border-t border-[#FBDC6D] py-3">
+        <div className="container flex flex-col items-center md:flex-row md:justify-between gap-y-6 text-[#FBDC6D]">
           <p dangerouslySetInnerHTML={markdownify(copyright)} />
           <p>&#169; Copyright 2023 - NexTech Media</p>
         </div>

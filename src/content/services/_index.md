@@ -27,7 +27,19 @@ features:
       enable: true
       label: "Get Started Now"
       link: "https://github.com/zeon-studio/nextplate"
-
+  
+  - title: "COURSES & TRAINING"
+    image: "https://res.cloudinary.com/dncar4d7j/image/upload/v1715505846/coursesTrainings_xv2xxs.webp"
+    content: "With Next, you can build modern and content-focused websites without sacrificing performance or ease of use."
+    bulletpoints:
+      - "Instantly load static sites for better user experience and SEO."
+      - "Intuitive syntax and support for popular frameworks make learning and using Next a breeze."
+      - "Use any front-end library or framework, or build custom components, for any project size."
+      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
+    button:
+      enable: true
+      label: "Get Started Now"
+      link: ""
   - title: "CONTENT MARKETING"
     image: "https://res.cloudinary.com/dncar4d7j/image/upload/v1715505845/contentMarketing_ohjolm.webp"
     content: "With Next, you can build modern and content-focused websites without sacrificing performance or ease of use."
@@ -41,18 +53,6 @@ features:
       label: "Get Started Now"
       link: ""
 
-  - title: "COURSES & TRAINING"
-    image: "https://res.cloudinary.com/dncar4d7j/image/upload/v1715505846/coursesTrainings_xv2xxs.webp"
-    content: "With Next, you can build modern and content-focused websites without sacrificing performance or ease of use."
-    bulletpoints:
-      - "Instantly load static sites for better user experience and SEO."
-      - "Intuitive syntax and support for popular frameworks make learning and using Next a breeze."
-      - "Use any front-end library or framework, or build custom components, for any project size."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
-    button:
-      enable: true
-      label: "Get Started Now"
-      link: ""
 
   - title: "WORDPRESS/CMS DEVELOPMENT"
     image: "https://res.cloudinary.com/dncar4d7j/image/upload/v1715505846/webDevelopment_tmvat9.webp"

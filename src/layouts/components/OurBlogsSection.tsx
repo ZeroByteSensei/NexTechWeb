@@ -18,9 +18,9 @@ const OurBlogsSection = () => {
     //   console.log(featuredPosts, "featured here");
 
     return ( 
-        <div className="bg-[#1B1E49] py-20">
+        <div className="bg-[#1B1E49] py-20 ">
             <SectionHeader primaryText="OUR BLOGS" secondaryText="Explore the latest" bgColor="bg-[#1B1E49]" textColor="text-[#8e92d5]"/>
-            <div className="flex flex-col items-center sm:flex-row w-full gap-y-6 px-6 my-10 justify-center">
+            <div className="flex flex-col items-center sm:flex-row w-full gap-y-6 gap-x-6 px-6 my-10 justify-center">
                 {featuredPosts.map((featuredPost, index)=>(
                     <BlogCard key={index} data={featuredPost} blog_folder={blog_folder} />
                 ))}

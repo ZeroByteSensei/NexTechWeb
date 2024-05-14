@@ -8,51 +8,39 @@ interface PageData {
   content?: string;
   frontmatter: Call_to_action;
 }
+  // colors: yellow: #FBDC6D, Blue: #1B1E49, Red: #D02727 
 
-const CallToAction = ({ data }: { data: PageData }) => {
+const CallToAction = () => {
   return (
     <>
-      {data.frontmatter.enable && (
-        <section className="pb-24 pt-28 bg-[#181818]">
-          <div className="container">
-            <div className="rounded-xl bg-theme-light px-4 py-16 dark:bg-darkmode-theme-light xl:p-20">
-              <div className="row items-center justify-between">
-                <div className="mb-10 md:col-5 lg:col-4 md:order-2 md:mb-0">
-                  <ImageFallback
-                    className="w-full"
-                    src={data.frontmatter.image}
-                    width={392}
-                    height={390}
-                    alt="cta-image"
-                  />
-                </div>
-                <div className="md:col-7 md:order-1">
-                  <h2
-                    dangerouslySetInnerHTML={markdownify(
-                      data.frontmatter.title,
-                    )}
-                    className="mb-2"
-                  />
-                  <p
-                    dangerouslySetInnerHTML={markdownify(
-                      data.frontmatter.description,
-                    )}
-                    className="mb-6"
-                  />
-                  {data.frontmatter.button.enable && (
-                    <Link
-                      className="btn btn-primary"
-                      href={data.frontmatter.button.link}
-                    >
-                      {data.frontmatter.button.label}
-                    </Link>
-                  )}
-                </div>
+        <section className="overflow-hidden bg-[#1B1E49] sm:grid sm:grid-cols-2 sm:items-center">
+          <div className="p-8 md:p-12 lg:px-16 lg:py-24">
+            <div className="mx-auto max-w-xl text-center sm:text-left">
+              <h2 className="text-2xl font-bold text-[#FBDC6D] md:text-3xl">
+                Ready to build your next project with Next?
+              </h2>
+
+              <p className="hidden text-gray-500 md:mt-4 md:block">
+                Experience the future of web development with Nextplate and Next. Build lightning-fast static sites with ease and flexibility.
+              </p>
+
+              <div className="mt-4 md:mt-8">
+                <Link href="/" className="inline-block rounded bg-[#FBDC6D] px-12 py-3 text-sm font-medium text-[#1B1E49] transition hover:bg-[#D02727] focus:outline-none focus:ring focus:ring-yellow-400">
+                  Get Started Now
+                </Link>
               </div>
             </div>
           </div>
-        </section>
-      )}
+          <div className="h-full aspect-[16/7] sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px]"
+          style={{backgroundImage:`url(https://res.cloudinary.com/dncar4d7j/image/upload/v1715684063/CTA_IMG_dwabtj.webp)`, backgroundSize:"cover"}}/>
+              {/* <ImageFallback
+                    className="h-full w-full"
+                    src={data.frontmatter.image}
+                    alt="cta-image"
+                    width={100}
+                    height={100}
+                  /> */}
+          </section>
     </>
   );
 };

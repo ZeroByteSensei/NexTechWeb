@@ -2,10 +2,12 @@ import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
 import HeroSection from "@/components/HeroSection";
 import HeroSectionStatic from "@/components/HeroSectionStatic";
+import HeroSectionStaticTwo from "@/components/HeroSectionStaticTwo";
 import { HireUsSection } from "@/components/HireUsSection";
 import OurBlogsSection from "@/components/OurBlogsSection";
 import OurServicesParallax from "@/components/OurServicesParallax";
 import OurServicesSection from "@/components/OurServicesSection";
+import TestimonialSectionSlider from "@/components/TestimonialSectionSlider";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import ImageFallback from "@/helpers/ImageFallback";
 import { getListPage } from "@/lib/contentParser";
@@ -32,9 +34,16 @@ const Home = () => {
     <>
       <SeoMeta />
       {/* Hero Section */}
-      <section className="w-full aspect-[8/16] lg:aspect-[16/8]">
-        {/* <HeroSection/>  This is the moving hero section */}
+      {/* <section className="w-full aspect-[8/16] lg:aspect-[16/8]">
+        <HeroSection/>  This is the moving hero section
+      </section> */}
+
+      {/* <section className="w-full aspect-[8/16] lg:aspect-[16/8]">
         <HeroSectionStatic/>
+      </section> */}
+
+      <section className="overflow-hidden">
+        <HeroSectionStaticTwo/>
       </section>
 
       <section className="">
@@ -61,11 +70,15 @@ const Home = () => {
       </section>
 
 
-      <section className="overflow-hidden">
+      {/* <section className="overflow-hidden">
         <TestimonialsSection data={testimonial}/>
+      </section> */}
+
+      <section className="overflow-hidden">
+        <TestimonialSectionSlider data={testimonial.frontmatter}/>
       </section>
 
-      <CallToAction data={callToAction} />
+      <CallToAction/>
 
 
       {/* <section className="section pt-14">

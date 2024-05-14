@@ -1,36 +1,48 @@
 "use client"
 
+import { useActivePath } from "@/helpers/useActivePath";
 import SectionHeader from "@/partials/SectionHeader";
+import Link from "next/link";
+
+
+  // colors: yellow: #FBDC6D, Blue: #1B1E49, Red: #D02727
 
 const AboutSection = () => {
+
+    const checkActivePath= useActivePath();
+
     return ( 
         <div className="w-full bg-[#181818]">
-            <div className="w-full">
+            <div className="w-full px-12">
                 <SectionHeader primaryText="ABOUT" secondaryText="US" bgColor="bg-[#181818]" textColor="text-[#8e92d5]"/>
-                <div className="grid grid-cols-4 grid-rows-3 w-full h-[70vh] gap-3 px-6 py-3">
-                    <div className="col-span-4 row-span-1 p-3 bg-gray-200 rounded-md">
-                        <p>
-                            About us content will be here
-                        </p>
-                    </div>
-                    <div className="flex gap-2 p-3 col-span-2 row-span-2 bg-gray-50 rounded-md drop-shadow-lg">
-                        <p className='rotate-180 text-4xl font-bold text-white [text-shadow:2px_2px_3px_var(--tw-shadow-color)] shadow-black text-center' style={{writingMode:"vertical-lr",}}>
-                            OUR MISSION
-                        </p>
-                        <div className="flex-grow text-3xl p-4 my-auto font-serif capitalize leading-[50px]">
-                            To drive social media excelence through innovative strategies and top notch survices. Committed to shaping the next generation of social media  experts by offering affordable or free education opportunies.
+                <div className="grid grid-cols-1 sm:grid-cols-3 w-full gap-x-4 gap-y-4 mt-8 sm:mt-12">
+                        <div className="col-span-1 sm:col-span-2 w-full aspect-[16/6] rounded-md flex flex-col justify-center px-6">
+                            <p className="text-[#FBDC6D] text-lg capitalize font-bold border-b-4 border-[#FBDC6D] pb-2 w-fit">who are we?</p>
+                            <h1 className="text-[#8e92d5] mt-4">About our agency heading</h1>
+                            <p className="text-[#cbcbcb] text-xl mt-6 text-justify">About us content will go here Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste repudiandae qui totam quisquam reiciendis obcaecati similique facilis ducimus enim, accusamus pariatur nihil fugiat odit nemo, consectetur sit illum dignissimos laudantium magnam inventore esse eum nostrum mollitia. Voluptatibus illum enim fugit expedita facere suscipit quaerat neque ad sequi, natus aut labore.</p>
+                        </div>
+                        <div className="col-span-1 w-full h-[40vh] sm:h-full rounded-md"
+                        style={{backgroundImage:"url(https://res.cloudinary.com/dncar4d7j/image/upload/v1715703122/about_sk6ha7.webp)", backgroundSize:'cover'}}>
+                            Mariam's pic will be added here
                         </div>
 
-                    </div>
-                    <div className="col-span-2 row-span-2 flex gap-2 p-3 bg-gray-400 rounded-md">
-                        <div className="flex-grow text-3xl p-4 my-auto font-serif capitalize leading-[50px]">
-                            To be the best social media agengy across the nation also wants to help students who dont have many resources by giving them the best education possible.
+                        <div className="col-span-1 w-full order-3 h-[40vh] md:h-full rounded-md"
+                        style={{backgroundImage:"url(https://res.cloudinary.com/dncar4d7j/image/upload/v1715703122/mission_x7xfve.webp)", backgroundSize:'cover'}}>
+                            our mission image
                         </div>
-                        <p className='rotate-0 text-4xl font-bold text-white [text-shadow:2px_2px_3px_var(--tw-shadow-color)] shadow-black text-center' style={{writingMode:"vertical-lr",}}>
-                            OUR VISION
+                        <div className="col-span-1 sm:col-span-2 sm:order-3 w-full aspect-[16/6] rounded-md px-6 flex flex-col justify-center">
+                        <p className="text-[#FBDC6D] text-lg capitalize font-bold border-b-4 border-[#FBDC6D] pb-2 w-fit">And Our Mission?</p>
+                            <h1 className="text-[#8e92d5] mt-4">Our Mission heading</h1>
+                            <p className="text-[#cbcbcb] text-xl mt-6 text-justify">Our Mission content will go here Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste repudiandae qui totam quisquam reiciendis obcaecati similique facilis ducimus enim, accusamus pariatur nihil fugiat odit nemo, consectetur sit illum dignissimos laudantium magnam inventore esse eum nostrum mollitia. Voluptatibus illum enim fugit expedita facere suscipit quaerat neque ad sequi, natus aut labore.
                         </p>
-                    </div>
+                        </div>
                 </div>
+                {!checkActivePath("/about") && ( 
+                    <Link href="/about"  className="flex justify-center mb-4 mt-16 sm:mt-6">
+                        <button className="bg-[#FBDC6D] text-[#1B1E49] hover:text-[#FBDC6D] hover:bg-[#1B1E49] hover:border hover:border-[#FBDC6D] px-8 py-2 rounded-full ">Know More</button>
+                    </Link>
+                )}
+                
             </div>
         </div>
      );
