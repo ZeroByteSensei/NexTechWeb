@@ -54,7 +54,7 @@ const PostSingle = ({ params }: { params: { single: string } }) => {
         description={description}
         image={image}
       />
-      <section className="section pt-7">
+      <section className="section pt-7 bg-[#FBDC6D]">
         <div className="container">
           <div className="row justify-center">
             <article className="lg:col-10">
@@ -72,15 +72,15 @@ const PostSingle = ({ params }: { params: { single: string } }) => {
               )}
               <h1
                 dangerouslySetInnerHTML={markdownify(title)}
-                className="h2 mb-4"
+                className="h2 mb-4 text-[#1B1E49]"
               />
               <ul className="mb-4">
-                <li className="mr-4 inline-block">
+                {/* <li className="mr-4 inline-block">
                   <Link href={`/authors/${slugify(author)}`}>
                     <FaRegUserCircle className={"-mt-1 mr-2 inline-block"} />
                     {humanize(author)}
                   </Link>
-                </li>
+                </li> */}
                 <li className="mr-4 inline-block">
                   <FaRegFolder className={"-mt-1 mr-2 inline-block"} />
                   {categories?.map((category: string, index: number) => (
@@ -100,7 +100,7 @@ const PostSingle = ({ params }: { params: { single: string } }) => {
                   </li>
                 )}
               </ul>
-              <div className="content mb-10">
+              <div className="content mb-10 text-slate-50">
                 <MDXContent content={content} />
               </div>
               <div className="row items-start justify-between">
@@ -136,7 +136,7 @@ const PostSingle = ({ params }: { params: { single: string } }) => {
           {/* <!-- Related posts --> */}
           <div className="section pb-0">
             <h2 className="h3 mb-12 text-center">Related Posts</h2>
-            <div className="row justify-center">
+            <div className="row justify-center bg-[#1B1E49] py-8 rounded-md">
               {similarPosts.map((post) => (
                 <div key={post.slug} className="lg:col-4 md:col-6 mb-14">
                   <BlogCard data={post} />

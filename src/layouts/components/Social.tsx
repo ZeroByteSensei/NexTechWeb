@@ -7,18 +7,12 @@ export interface ISocial {
   link: string;
 }
 
-const Social = ({
-  source,
-  className,
-}: {
-  source: ISocial[];
-  className: string;
-}) => {
+const Social = ({ source, className, }: { source: ISocial[]; className: string;}) => {
   return (
     <ul className={className}>
       {source.map((social) => (
         <li key={social.name}>
-          <a
+          <Link
             aria-label={social.name}
             href={social.link}
             target="_blank"
@@ -26,7 +20,7 @@ const Social = ({
           >
             <span className="sr-only">{social.name}</span>
             <DynamicIcon className="inline-block" color="#1B1E49" icon={social.icon} />
-          </a>
+          </Link>
         </li>
       ))}
     </ul>

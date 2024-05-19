@@ -4,16 +4,16 @@ const FAQsection = () => {
 
     const FAQs=[
         {
-            question: "Lorem ipsum dolor sit amet consectetur adipisicing?",
-            answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo officiis explicabo consequuntur distinctio corporis earum similique!"
+            question: "Q: What sets NexTech Media apart in digital marketing?",
+            answer: "A: Our unique blend of expertise, personalized strategies, and a decade of experience positions us as leaders in elevating your online presence."
         },
         {
-            question: "Lorem ipsum dolor sit amet consectetur adipisicing?",
-            answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo officiis explicabo consequuntur distinctio corporis earum similique!"
+            question: "Q: How do you ensure the success of your clients?",
+            answer: "A: Through a combination of innovative tactics, real-world training, and a relentless pursuit of results, we guarantee a digital marketing experience that not only meets but exceeds expectations."
         },
         {
-            question: "Lorem ipsum dolor sit amet consectetur adipisicing?",
-            answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo officiis explicabo consequuntur distinctio corporis earum similique!"
+            question: "Q: What platforms does NexTech Media specialize in for social media management? ",
+            answer: "A: We specialize in all shorts of platforms from Meta(formerly Facebook) to Google and more. Our team stays up-to-date with the latest trends and algorithms to ensure your content reaches its maximum potential audience."
         }
     ]
     return ( 

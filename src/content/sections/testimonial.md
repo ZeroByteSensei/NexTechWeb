@@ -5,27 +5,27 @@ description: "Don't just take our word for it - hear from some of our satisfied 
 
 # Testimonials
 testimonials:
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
+  - name: "Sarah Thompson"
+    designation: "Marketing Director"
     avatar: "/images/avatar-sm.png"
-    review: "Stayin' Alive01"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+    review: "Great Work"
+    content: "Their team is creative, responsive, and always goes the extra mile. We've seen a significant increase in engagement and followers since we started working with them."
 
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
+  - name: "Nivi Artistry"
+    designation: "Art Store Owner"
     avatar: "/images/avatar-sm.png"
-    review: "Stayin' Alive02"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+    review: "Highly Recommended"
+    content: "As a small business owner, I needed a reliable partner to manage our social media marketing. NexTech Media has been fantastic in creating effective ad campaigns that have increased our sales and brand awareness. Highly recommended!"
 
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
+  - name: "James Riley"
+    designation: "Business Owner"
     avatar: "/images/avatar-sm.png"
-    review: "Stayin' Alive03"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+    review: "Amazing Result"
+    content: "Our website redesign by NexTech Media exceeded all our expectations. The new site is not only visually stunning but also highly functional and user-friendly. Their attention to detail and dedication to understanding our needs were truly impressive."
 
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
+  - name: "K. Agrawal"
+    designation: "HR Head"
     avatar: "/images/avatar-sm.png"
-    review: "Stayin' Alive04"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+    review: "Happy Overall"
+    content: "The team is highly reliable, their prompt response to the issues made things much easier for me and my team. All the people in the team are amazing and it feels like working with your own team."
 ---

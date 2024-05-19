@@ -28,38 +28,44 @@ export default function OurServicesParallax() {
     {
       Heading: "SOCIAL MEDIA MANAGEMENT",
       Description:
-        "At NexTech Media, we excel in social media management. Our expert team crafts engaging posts, schedules timely updates, and interacts with your audience. Boost your online presence, connect with customers, and grow your brand effortlessly. You focus on what you do best, and let us do the rest.",
-        ServiceImg: "https://res.cloudinary.com/dncar4d7j/image/upload/v1715505845/socialMediaManagement_tfzif4.webp",
+        "Take the power of social media to the next level. At NexTech Media, we handle everything from content creation and scheduling to community engagement and analytics. We ensure your social media platforms are vibrant, engaging, and aligned with your brand’s voice to build an amazing online presence.",
+      ServiceImg: "https://res.cloudinary.com/dncar4d7j/image/upload/v1715505845/socialMediaManagement_tfzif4.webp",
+      link:"/services#socialMediaManagement"
     },
     {
-        Heading: "SOCIAL MEDIA MARKETING",
-        Description:
-        "We'll help you reach your audience, boost your brand, and grow your business. From eye-catching posts to targeted ads, we've got you covered. Plus, we deliver top-notch results with Google quality leads and high-performing ad campaigns. You focus on what you do best, and let us do the rest. ",
-        ServiceImg: "https://res.cloudinary.com/dncar4d7j/image/upload/v1715505845/socielMediaMarketingwebp_zkoags.webp",
+      Heading: "SOCIAL MEDIA MARKETING",
+      Description:
+        "Reach your brand goals with targeted social media marketing campaigns. Our team at NexTech Media leverages data-driven strategies to create compelling ads on platforms like Facebook, Instagram, LinkedIn, Google, etc. We focus on reaching your ideal audience, maximizing ROI, and driving conversions.",
+      ServiceImg: "https://res.cloudinary.com/dncar4d7j/image/upload/v1715505845/socielMediaMarketingwebp_zkoags.webp",
+      link:"/services#socialMediaMarketing"
     },
     {
       Heading: "CONTENT MARKETING",
       Description:
-        "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions. You focus on what you do best, and let us do the rest. ",
-        ServiceImg: "https://res.cloudinary.com/dncar4d7j/image/upload/v1715505845/contentMarketing_ohjolm.webp",
+        "Content is king, and at NexTech Media, we create content that rules. Our content marketing services include crafting high-quality blog posts, articles, infographics, and more. We focus on producing SEO-optimized content that attracts, engages, and converts your target audience. Trust us to tell your story and amplify your brand's message.",
+      ServiceImg: "https://res.cloudinary.com/dncar4d7j/image/upload/v1715505845/contentMarketing_ohjolm.webp",
+      link:"/services#contentMarketing"
     },
     {
       Heading: "COURSES & TRAINING",
       Description:
-        "At Nextech we provides diverse courses, including Social Media Management and Digital Marketing, catering to aspiring social media managers and marketing experts. Their offerings equip individuals with skills essential for pursuing careers in these fields, simplifying complex concepts for easy understanding.",
-        ServiceImg: "https://res.cloudinary.com/dncar4d7j/image/upload/v1715505846/coursesTrainings_xv2xxs.webp",    
+        "Empower yourself and your team with our expert-led courses and training programs. NexTech Media offers comprehensive training in digital marketing, social media management, content creation, and more. Our courses are designed to provide practical skills and insights that you can apply immediately.",
+      ServiceImg: "https://res.cloudinary.com/dncar4d7j/image/upload/v1715505846/coursesTrainings_xv2xxs.webp",
+      link:"/services#coursesNtraining"    
     },
     {
       Heading: "GRAPHIC DESIGNING & VIDEO EDITING",
       Description:
-        "We specialize in creating top-notch designs that elevate your brand or product. We firmly believe that superior designs yield superior outcomes. Let us take your visuals to the next level for exceptional results. Our expertise ensures professional, attention-grabbing content that resonates with audiences. ",
-        ServiceImg: "https://res.cloudinary.com/dncar4d7j/image/upload/v1715505846/graphicDesign_pcuv3z.webp",
+        "Visual appeal is crucial in capturing your audience's attention. Our graphic designing team at NexTech Media excels in creating stunning visuals that resonate with your brand identity and our video editing services bring your vision to life.",
+      ServiceImg: "https://res.cloudinary.com/dncar4d7j/image/upload/v1715505846/graphicDesign_pcuv3z.webp",
+      link:"/services#graphicDesigning"
     },
     {
       Heading: "WORDPRESS/ CMS DEVELOPMENT",
       Description:
-        "We specialize in creating top-notch designs that elevate your brand or product. We firmly believe that superior designs yield superior outcomes. Let us take your visuals to the next level for exceptional results. Our expertise ensures professional, attention-grabbing content that resonates with audiences. ",
-        ServiceImg: "https://res.cloudinary.com/dncar4d7j/image/upload/v1715505846/webDevelopment_tmvat9.webp",
+        "A robust online presence starts with a great website. Our WordPress/CMS development services at NexTech Media offer custom website solutions tailored to your business needs. We specialize in creating responsive, user-friendly, and SEO-optimized websites that enhance your brand’s digital footprint.",
+      ServiceImg: "https://res.cloudinary.com/dncar4d7j/image/upload/v1715505846/webDevelopment_tmvat9.webp",
+      link:"/services#wordpressCMSdevelopment"
     },
   ];
 
@@ -70,7 +76,7 @@ export default function OurServicesParallax() {
           {
             servicesContent.map( (service, i) => {
               const targetScale = 1 - ( (servicesContent.length - i) * 0.05);
-              return <Card key={`p_${i}`} i={i} {...service} progress={scrollYProgress} range={[i * .25, 1]} targetScale={targetScale}/>
+              return <Card key={`p_${i}`} i={i} {...service} progress={scrollYProgress} range={[i * .15, 1]} targetScale={targetScale}/>
             })
           }
     </main>

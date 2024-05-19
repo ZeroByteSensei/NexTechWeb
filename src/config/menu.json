@@ -47,15 +47,15 @@
   "footer": [
     {
       "name": "Terms & Conditions",
-      "url": "others/companyTnC"
+      "url": "/others/companyTnC"
     },
     {
       "name": "Privacy Policy",
-      "url": "others/privacyPolicy"
+      "url": "/others/privacyPolicy"
     },
     {
       "name": "License & Copyright",
-      "url": "others/licenseNcopyright"
+      "url": "/others/licenseNcopyright"
     }
   ]
 }

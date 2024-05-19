@@ -48,16 +48,14 @@ const HeroSectionStaticTwo = () => {
                 <div className="max-w-xl text-center sm:text-left">
                     <h1 className="text-3xl text-[#1B1E49] font-extrabold sm:text-5xl">
                         Let us build you
-
                         <strong className="block font-extrabold text-[#D02727]"> A real BRAND. </strong>
                     </h1>
 
                     <p className="mt-4 max-w-lg sm:text-xl/relaxed text-[#1B1E49]">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo tenetur fuga ducimus
-                        numquam ea!
+                        Transform your business with a brand that resonates. We craft identities that connect and inspire.
                     </p>
 
-                    <div className="mt-8 flex flex-wrap gap-4 text-center">
+                    <div className="mt-16 flex flex-wrap gap-4 text-center">
                         <button onClick={()=>handleScroll('contact-section')} className="block w-full rounded bg-[#1B1E49] px-12 py-3 text-sm font-medium text-white shadow hover:bg-[#D02727] active:bg-[#D02727] sm:w-auto"  >
                             Get Started
                         </button>

@@ -19,8 +19,8 @@ const ContactSection = () => {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                         </svg>
-                        <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                            Phillipines
+                        <div className="ml-4 text-md tracking-wide font-semibold px-2">
+                            3306 9th Street, <br/>United Parañaque Subdivision, <br/>5 area, 7 San Isidro, <br/>Parañaque city, Philippines
                         </div>
                     </div>
                     <div className="flex items-center mt-2 text-gray-600 dark:text-gray-400">

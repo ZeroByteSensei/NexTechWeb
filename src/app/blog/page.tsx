@@ -6,6 +6,7 @@ import { getAllTaxonomy, getTaxonomy } from "@/lib/taxonomyParser";
 import { sortByDate } from "@/lib/utils/sortFunctions";
 import PageHeader from "@/partials/PageHeader";
 import PostSidebar from "@/partials/PostSidebar";
+import SectionHeader from "@/partials/SectionHeader";
 import SeoMeta from "@/partials/SeoMeta";
 import { Post } from "@/types";
 
@@ -36,7 +37,7 @@ const Posts = () => {
         description={description}
         image={image}
       />
-      <PageHeader title={postIndex.frontmatter.title} />
+      <SectionHeader primaryText="OUR BLOGS" secondaryText="Explore the latest" bgColor="bg-[#181818]" textColor="text-[#8e92d5]"/>
       <section className="section">
         <div className="container">
           <div className="row gx-5">

@@ -129,7 +129,7 @@ const Header = () => {
                   )
                 )}
               </motion.div>
-              <div className="flex flex-col md:flex-row gap-y-8 md:justify-between md:px-4 md:pb-8">
+              <div className="flex flex-col md:flex-row gap-y-8 md:justify-between px-4 md:pb-8">
                 <Social source={social.main} className="social-icons"/>
                 <div>
                   <p className="text-[#FBDC6D] text-lg">contact@nextechmedia.co.in</p>

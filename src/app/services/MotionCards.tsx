@@ -10,8 +10,8 @@ const MotionCards = ({features}:{features:Feature[]}) => {
     return ( 
         <div>
             {features.map((feature, index: number) => (
-                <section key={index}
-                className={`section-sm ${index % 2 === 0 ? "bg-[#FBDC6D]":"bg-[#1b1e49]"}`}>
+                <section key={index} id={feature.id}
+                    className={`section-sm ${index % 2 === 0 ? "bg-[#FBDC6D]":"bg-[#1b1e49]"}`}>
                     <div className="container ">
                         <div className="row items-center justify-between ">
                             <motion.div

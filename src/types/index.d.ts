@@ -6,10 +6,21 @@ export type RegularPage = {
     meta_title?: string;
     layout?: string;
     draft?: boolean;
+    teamMembers:TeamMember[]
   };
   content: string;
   slug?: string;
 };
+
+export type TeamMember={
+  name:string;
+  designation:string;
+  speciality:string;
+  image:string;
+  instaLink:string;
+  twitterLink:string;
+  linkedinLink:string;
+}
 
 export type Post = {
   frontmatter: {
@@ -52,6 +63,7 @@ export type Feature = {
   bulletpoints: string[];
   content: string;
   title: string;
+  id:string;
 };
 
 export type Testimonial = {

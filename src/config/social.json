@@ -1,24 +1,24 @@
 {
   "main": [
     {
+    "name": "instagram",
+    "icon": "FaInstagram",
+    "link": "https://www.instagram.com/nex_techmedia/"
+    },
+    {
       "name": "facebook",
       "icon": "FaFacebook",
-      "link": "https://www.facebook.com/"
+      "link": "https://www.facebook.com/profile.php?id=61550242003418&mibextid=LQQJ4d"
+    },
+    {
+      "name": "linkedin",
+      "icon": "FaLinkedin",
+      "link": "https://www.linkedin.com/company/digitalwavee/"
     },
     {
       "name": "twitter",
       "icon": "FaTwitter",
       "link": "https://twitter.com/"
-    },
-    {
-      "name": "github",
-      "icon": "FaGithub",
-      "link": "https://www.github.com/"
-    },
-    {
-      "name": "linkedin",
-      "icon": "FaLinkedin",
-      "link": "https://www.linkedin.com/"
     }
   ]
 }

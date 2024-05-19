@@ -20,6 +20,8 @@ const Courses = () => {
         "IsAvailable":"false",
         "OriginalPrice":"1,999",
         "FinalPrice":"999",
+        "FeatureOne":"Recorder Classes",
+        "FeatureTwo":"1 month total",
         "Discount":"50%",
         "CourseContent":["Managing a Brand", "Market Research", "Competitive Analysis", "Strategy Development", "Content Calendar Strategies", "Basics of Content Creation", "Introduction to Canva", "Community Management", "Trend Analysis", "Facebook and LinkedIn Ads", "Analytics and Reporting", "Starting a Career as a Freelancer", "Introduction to AI in SMM"]
     },{
@@ -29,6 +31,8 @@ const Courses = () => {
         "IsAvailable":"true",
         "OriginalPrice":"9,999",
         "FinalPrice":"4,999",
+        "FeatureOne":"Live Classes",
+        "FeatureTwo":"3 months total",
         "Discount":"50%",
         "FormLink":"#tally-open=w24Zyp&tally-emoji-text=👋&tally-emoji-animation=wave&tally-auto-close=1000",
         "CourseContent":["Managing a Brand", "Market Research", "Competitive Analysis", "Strategy Development", "Content Calendar Strategies", "Basics of Content Creation", "Introduction to Canva", "Community Management", "Trend Analysis", "Facebook and LinkedIn Ads", "Analytics and Reporting", "Starting a Career as a Freelancer", "Introduction to AI in SMM"]
@@ -39,6 +43,8 @@ const Courses = () => {
         "IsAvailable":"true",
         "OriginalPrice":"XX,999",
         "FinalPrice":"X,999",
+        "FeatureOne":"Live Classes",
+        "FeatureTwo":"1.5 months total",
         "Discount":"50%",
         "FormLink":"#tally-open=nGrgNe&tally-emoji-text=👋&tally-emoji-animation=wave&tally-auto-close=1000",
         "CourseContent":["Managing a Brand", "Market Research", "Competitive Analysis", "Strategy Development", "Content Calendar Strategies", "Basics of Content Creation", "Introduction to Canva", "Community Management", "Trend Analysis", "Facebook and LinkedIn Ads", "Analytics and Reporting", "Starting a Career as a Freelancer", "Introduction to AI in SMM"]
@@ -60,8 +66,8 @@ const Courses = () => {
 
                                 <div className="border-b border-black mb-4 pb-4 pt-4">
                                     <p className="w-full flex gap-x-4 ml-4"> 
-                                        <span className="border border-[#1B1E49] rounded-full text-red-500 px-4">Live Classes</span>
-                                        <span className="border border-[#1B1E49] rounded-full text-red-500 px-4">3 months total</span>
+                                        <span className="border border-[#1B1E49] rounded-full text-red-500 px-4">{course.FeatureOne}</span>
+                                        <span className="border border-[#1B1E49] rounded-full text-red-500 px-4">{course.FeatureTwo}</span>
                                     </p>
                                     <h1 className="text-lg mx-4 mt-3 text-[#1B1E49]">{course.Heading}</h1>
                                 </div>

@@ -2,94 +2,111 @@
 # Features
 features:
   - title: "SOCIAL MEDIA MARKETING"
+    id: "socielMediaMarketing"
     image: "https://res.cloudinary.com/dncar4d7j/image/upload/v1715505845/socielMediaMarketingwebp_zkoags.webp"
-    content: "Nextplate is a comprehensive starter template that includes everything you need to get started with your Next project. What's Included in Nextplate"
+    content: "Our data-driven approach ensures your ads reach the right audience, maximizing ROI and effectively growing your brand’s online presence."
     bulletpoints:
-      - "10+ Pre-build pages"
-      - "95+ Google Pagespeed Score"
-      - "Build with Next and TailwindCSS for easy and customizable styling"
-      - "Fully responsive on all devices"
-      - "SEO-optimized for better search engine rankings"
-      - "**Open-source and free** for personal and commercial use"
+      - Data-driven ad campaigns
+      - Audience targeting and segmentation
+      - A/B testing for optimal performance
+      - Conversion tracking and optimization
+      - Influencer collaborations
+      - Multi-platform campaign management
     button:
       enable: true
       label: "Get Started Now"
-      link: "#"
+      link: "/enquiry"
 
   - title: "SOCIAL MEDIA MANAGEMENT"
+    id: "socielMediaManagement"
     image: "https://res.cloudinary.com/dncar4d7j/image/upload/v1715505845/socialMediaManagement_tfzif4.webp"
-    content: "Next is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
+    content: "We at NexTech Media, create and manage engaging content, build and nurture your online community, and provide detailed analytics to help you grow and succeed on social media platforms."
     bulletpoints:
-      - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
-      - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
-      - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
+      - Daily content creation and scheduling
+      - Engaging community management
+      - In-depth analytics and reporting
+      - Customized social media strategies
+      - Profile optimization across platforms
+      - Crisis management and reputation monitoring
     button:
       enable: true
       label: "Get Started Now"
-      link: "https://github.com/zeon-studio/nextplate"
+      link: "/enquiry"
   
   - title: "COURSES & TRAINING"
+    id: "coursesNtraining"
     image: "https://res.cloudinary.com/dncar4d7j/image/upload/v1715505846/coursesTrainings_xv2xxs.webp"
-    content: "With Next, you can build modern and content-focused websites without sacrificing performance or ease of use."
+    content: "Our comprehensive training covers various aspects of digital marketing, equipping you with the knowledge and tools needed to succeed in the digital world."
     bulletpoints:
-      - "Instantly load static sites for better user experience and SEO."
-      - "Intuitive syntax and support for popular frameworks make learning and using Next a breeze."
-      - "Use any front-end library or framework, or build custom components, for any project size."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
+      - Digital marketing fundamentals
+      - Advanced social media strategies
+      - Content creation techniques
+      - SEO best practices
+      - Graphic design principles
     button:
       enable: true
       label: "Get Started Now"
-      link: ""
+      link: "/enquiry"
+
   - title: "CONTENT MARKETING"
+    id: "contentMarketing"
     image: "https://res.cloudinary.com/dncar4d7j/image/upload/v1715505845/contentMarketing_ohjolm.webp"
-    content: "With Next, you can build modern and content-focused websites without sacrificing performance or ease of use."
+    content: "Our content marketing services focus on creating valuable and engaging materials that attract, educate, and persuade your target market to take action."
     bulletpoints:
-      - "Instantly load static sites for better user experience and SEO."
-      - "Intuitive syntax and support for popular frameworks make learning and using Next a breeze."
-      - "Use any front-end library or framework, or build custom components, for any project size."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
+      - Blog posts and articles creation
+      - Infographics and visual content
+      - SEO keyword integration
+      - Content strategy and planning
+      - Ebooks and whitepapers
+      - Case studies and success stories
     button:
       enable: true
       label: "Get Started Now"
-      link: ""
+      link: "/enquiry"
 
 
   - title: "WORDPRESS/CMS DEVELOPMENT"
+    id: "wordpressCMSdevelopment"
     image: "https://res.cloudinary.com/dncar4d7j/image/upload/v1715505846/webDevelopment_tmvat9.webp"
-    content: "With Next, you can build modern and content-focused websites without sacrificing performance or ease of use."
+    content: "We create responsive, user-friendly, and SEO-optimized websites that reflect your brand’s identity and deliver an exceptional user experience."
     bulletpoints:
-      - "Instantly load static sites for better user experience and SEO."
-      - "Intuitive syntax and support for popular frameworks make learning and using Next a breeze."
-      - "Use any front-end library or framework, or build custom components, for any project size."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
+      - Responsive website design
+      - SEO-friendly architecture
+      - E-commerce solutions
+      - Website maintenance and support
+      - Performance optimization
     button:
       enable: true
       label: "Get Started Now"
-      link: ""
+      link: "/enquiry"
 
   - title: "GRAPHIC DESIGNING"
+    id: "graphicDesigning"
     image: "https://res.cloudinary.com/dncar4d7j/image/upload/v1715505846/graphicDesign_pcuv3z.webp"
-    content: "With Next, you can build modern and content-focused websites without sacrificing performance or ease of use."
+    content: "We provide creative solutions for all your design needs, ensuring your brand stands out with compelling visuals that communicate your message effectively."
     bulletpoints:
-      - "Instantly load static sites for better user experience and SEO."
-      - "Intuitive syntax and support for popular frameworks make learning and using Next a breeze."
-      - "Use any front-end library or framework, or build custom components, for any project size."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
+      - Logo and brand identity design
+      - Marketing materials (brochures, flyers)
+      - Social media graphics
+      - Website and app design
+      - Custom illustrations and infographics
+      - Print and digital advertisements
     button:
       enable: true
       label: "Get Started Now"
-      link: ""
+      link: "/enquiry"
 
   - title: "VIDEO EDITING"
+    id: "videoEditing"
     image: "https://res.cloudinary.com/dncar4d7j/image/upload/v1715505846/videoEditing_w23dai.webp"
-    content: "With Next, you can build modern and content-focused websites without sacrificing performance or ease of use."
+    content: "From promotional videos to social media clips, our skilled editors enhance your visual storytelling with high-quality editing and compelling motion graphics."
     bulletpoints:
-      - "Instantly load static sites for better user experience and SEO."
-      - "Intuitive syntax and support for popular frameworks make learning and using Next a breeze."
-      - "Use any front-end library or framework, or build custom components, for any project size."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
+      - Promotional and explainer videos
+      - Social media video clips
+      - Post-production editing
+      - Motion graphics and animations
     button:
       enable: true
       label: "Get Started Now"
-      link: ""
+      link: "/enquiry"
 ---
