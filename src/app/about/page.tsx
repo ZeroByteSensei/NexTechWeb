@@ -65,15 +65,15 @@ const About = () => {
                   <p className="mt-4 text-gray-600">
                     
                     <strong>Nitish, CEO & Co-Founder</strong> <br/>
-                    "Success in digital marketing requires more than just great strategies; it requires passion, persistence, and a commitment to continuous learning."
+                    &quot;Success in digital marketing requires more than just great strategies; it requires passion, persistence, and a commitment to continuous learning.&quot;
                     <br/>
                     <br/>
                     <strong>Mariam, COO & Co-Founder</strong> <br/>
-                    "Operational excellence is the backbone of any successful business. It&apos;s about having the right processes in place and ensuring that every team member is aligned with the company’s mission and values."
+                    &quot;Operational excellence is the backbone of any successful business. It&apos;s about having the right processes in place and ensuring that every team member is aligned with the company&apos;s mission and values.&quot;
                     <br/>
                     <br/>
                     <strong>Nitish, CEO & Co-Founder</strong> <br/>
-                    "Technology is a powerful enabler in today&apos;s digital world. It&apos;s not just about having the latest tools, but about using them effectively to solve real problems."
+                    &quot;Technology is a powerful enabler in today&apos;s digital world. It&apos;s not just about having the latest tools, but about using them effectively to solve real problems.&quot;
                   </p>
 
                   <Link href="/contact" className="mt-8 inline-block rounded border border-indigo-600 bg-[#1B1E49] px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-[#1B1E49] focus:outline-none focus:ring active:text-[#1B1E49]">
