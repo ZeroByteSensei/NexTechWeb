@@ -1,7 +1,7 @@
 ---
 title: "5 Easy Ways to Boost Your Social Media Presence"
-meta_title: ""
-description: "Having a strong social media presence is crucial to connect with the audience, build brand awareness,"
+meta_title: "5 Easy Ways to Boost Your Online Presence"
+description: "Having a strong social media presence is crucial to connect with the audience, build brand awareness, and drive engagement."
 date: 2022-04-04T05:00:00Z
 image: "https://res.cloudinary.com/dncar4d7j/image/upload/v1705924479/samples/man-on-a-escalator.jpg"
 categories: ["SocialMedia", "Branding"]

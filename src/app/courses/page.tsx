@@ -15,7 +15,7 @@ const Courses = () => {
 
     const courses=[{
         "Heading":"Pre-recorded Lectures on SMM",
-        "Description":"Lorem first ipsum first dolor sit amet first pretium consectetur adipiscing elit. Lorem consectetur adipiscing elit.",
+        "Description":"This course comprise of pre-recorded lectures on Social Media Management that you can watch any time at your desired time.",
         "CourseImg":"https://res.cloudinary.com/dncar4d7j/image/upload/v1715505846/coursesTrainings_xv2xxs.webp",
         "IsAvailable":"false",
         "OriginalPrice":"1,999",
@@ -26,7 +26,7 @@ const Courses = () => {
         "CourseContent":["Managing a Brand", "Market Research", "Competitive Analysis", "Strategy Development", "Content Calendar Strategies", "Basics of Content Creation", "Introduction to Canva", "Community Management", "Trend Analysis", "Facebook and LinkedIn Ads", "Analytics and Reporting", "Starting a Career as a Freelancer", "Introduction to AI in SMM"]
     },{
         "Heading":"Introduction to Social Media Management",
-        "Description":"Lorem second ipsum second dolor sit amet second pretium consectetur adipiscing elit. Lorem consectetur adipiscing elit.",
+        "Description":"This is a course on social media management designed for individuals who are new to the field and want to learn the skill.",
         "CourseImg":"https://res.cloudinary.com/dncar4d7j/image/upload/v1715505846/coursesTrainings_xv2xxs.webp",
         "IsAvailable":"true",
         "OriginalPrice":"9,999",
@@ -38,7 +38,7 @@ const Courses = () => {
         "CourseContent":["Managing a Brand", "Market Research", "Competitive Analysis", "Strategy Development", "Content Calendar Strategies", "Basics of Content Creation", "Introduction to Canva", "Community Management", "Trend Analysis", "Facebook and LinkedIn Ads", "Analytics and Reporting", "Starting a Career as a Freelancer", "Introduction to AI in SMM"]
     },{
         "Heading":"Digital Marketing Course For Corporates",
-        "Description":"Lorem third ipsum third dolor sit amet third pretium consectetur adipiscing elit. Lorem consectetur adipiscing elit.",
+        "Description":"This course is specifically designed for corporates who want to train their employees in digital marketing.",
         "CourseImg":"https://res.cloudinary.com/dncar4d7j/image/upload/v1715505846/coursesTrainings_xv2xxs.webp",
         "IsAvailable":"true",
         "OriginalPrice":"XX,999",
@@ -136,6 +136,7 @@ const Courses = () => {
                         </div>
                     }
                 </div>
+                <div className="my-8 p-4 bg-[#FBDC6D] rounded-md text-[#1B1E49]">Our LMS is coming soon, Just to give you a better learning experience..</div>
             </div>
         </section>
             

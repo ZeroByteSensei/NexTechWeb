@@ -29,7 +29,7 @@ const ContactSection = () => {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                         </svg>
                         <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                            Lucknow
+                            Lucknow, India
                         </div>
                     </div>
 

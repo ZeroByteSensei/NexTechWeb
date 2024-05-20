@@ -1,7 +1,7 @@
 ---
-title: "Hey, I am John Doe!"
-meta_title: "About"
-description: "this is meta description"
+title: "About us page | NexTech Media, Digital Marketing Agency"
+meta_title: "About us | NexTech Media about us page"
+description: "Welcome to NexTech Media, your trusted partner in digital marketing excellence. We are a dynamic team of creative professionals dedicated to helping businesses thrive in the digital age."
 image: "/images/avatar.png"
 draft: false
 

@@ -1,15 +1,15 @@
 {
   "site": {
-    "title": "NexTech Media",
+    "title": "NexTech Media | Digital Marketing Agency | India | Phillipines",
     "base_url": "https://nextech.co.in",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
     "logo": "/images/logo.png",
-    "logo_darkmode": "/images/logo-darkmode.png",
+    "logo_darkmode": "/images/logo.png",
     "logo_width": "180",
     "logo_height": "70",
-    "logo_text": "NexTech"
+    "logo_text": "NexTech Logo"
   },
 
   "settings": {
@@ -30,7 +30,7 @@
   "navigation_button": {
     "enable": true,
     "label": "Get Started",
-    "link": "https://github.com/zeon-studio/nextplate"
+    "link": "https://github.com/"
   },
 
   "disqus": {
@@ -42,6 +42,6 @@
   "metadata": {
     "meta_author": "NexTech Media",
     "meta_image": "/images/og-image.png",
-    "meta_description": "NexTech Media Agency Website"
+    "meta_description": "NexTech Media Agency provide digital marketing, web development, and SEO services to grow your business online. Contact us for a free consultation."
   }
 }

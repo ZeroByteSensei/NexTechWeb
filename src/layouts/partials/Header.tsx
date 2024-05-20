@@ -132,7 +132,7 @@ const Header = () => {
               <div className="flex flex-col md:flex-row gap-y-8 md:justify-between px-4 md:pb-8">
                 <Social source={social.main} className="social-icons"/>
                 <div>
-                  <p className="text-[#FBDC6D] text-lg">contact@nextechmedia.co.in</p>
+                  <p className="text-[#FBDC6D] text-lg" >contact@nextechmedia.co.in</p>
                 </div>
               </div>
             </div>

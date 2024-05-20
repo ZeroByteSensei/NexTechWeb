@@ -1,4 +1,10 @@
 ---
+title: "Services Page | NexTech Media, Digital Marketing Agency"
+meta_title: "Services Page | NexTech Media about us page"
+description: "With our services take the power of social media to the next level. At NexTech Media, we handle everything from content creation and scheduling to community engagement and analytics."
+image: "/images/avatar.png"
+draft: false
+
 # Features
 features:
   - title: "SOCIAL MEDIA MARKETING"

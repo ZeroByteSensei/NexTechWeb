@@ -21,10 +21,9 @@ const Contact = () => {
   return (
     <>
       <SeoMeta
-        title="Contact Page"
+        title="Contact Page | NexTech Media"
         meta_title="NexTech Media Contact Page"
-        description="This is the contact page for NexTech Media"
-        image="/"
+        description="This is the contact page for NexTech Media. If you need any help or want to discuss anything, feel free to contact us."
       />
       {/* <PageHeader title={title} /> */}
       
@@ -93,7 +92,7 @@ const Contact = () => {
                               Phone Number
                           </h4>
                           <p className="text-base text-[#1B1E49]">
-                              (+62)81 414 257 9980
+                              (+63) xxx xxx xxxx
                           </p>
                         </div>
                     </div>

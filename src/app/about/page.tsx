@@ -18,7 +18,6 @@ const About = () => {
         title={title}
         meta_title={meta_title}
         description={description}
-        image={image}
       />
       <section className="">
           <AboutSection/>
@@ -47,7 +46,7 @@ const About = () => {
                     width={500}
                     height={500}
                     alt=""
-                    src="https://res.cloudinary.com/dncar4d7j/image/upload/v1715703122/mission_x7xfve.webp"
+                    src="https://res.cloudinary.com/dncar4d7j/image/upload/v1716207292/mission_ubjqp8.webp"
                     className="absolute inset-0 h-full w-full object-cover rounded-l-md"
                   />
                 </div>
@@ -59,21 +58,15 @@ const About = () => {
 
                 <div className="p-8 sm:p-16 lg:p-20">
                   <h2 className="text-2xl font-bold sm:text-3xl mb-1 lg:mb-10">
-                    A few words of wisdom from our founders
+                    A few words from our founders
                   </h2>
 
                   <p className="mt-4 text-gray-600">
                     
-                    <strong>Nitish, CEO & Co-Founder</strong> <br/>
-                    &quot;Success in digital marketing requires more than just great strategies; it requires passion, persistence, and a commitment to continuous learning.&quot;
+                    Nextech was founded with a clear and powerful mission: to help business owners struggling to bring their operations online in today's fast-paced digital world. We ensure they stay competitive and thrive, rather than getting left behind. But our vision doesn't stop there. 
+                    <br/>Nextech is also dedicated to empowering young people who dream of careers in digital marketing. We provide free or affordable, hands-on education, equipping them with the skills and knowledge they need to succeed. Nextech is a brand with a purpose. We are committed to driving growth, innovation, and opportunity for both businesses and individuals. 
                     <br/>
-                    <br/>
-                    <strong>Mariam, COO & Co-Founder</strong> <br/>
-                    &quot;Operational excellence is the backbone of any successful business. It&apos;s about having the right processes in place and ensuring that every team member is aligned with the company&apos;s mission and values.&quot;
-                    <br/>
-                    <br/>
-                    <strong>Nitish, CEO & Co-Founder</strong> <br/>
-                    &quot;Technology is a powerful enabler in today&apos;s digital world. It&apos;s not just about having the latest tools, but about using them effectively to solve real problems.&quot;
+                    <br/>Join us, and be part of a movement that transforms challenges into opportunities and aspirations into achievements.
                   </p>
 
                   <Link href="/contact" className="mt-8 inline-block rounded border border-indigo-600 bg-[#1B1E49] px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-[#1B1E49] focus:outline-none focus:ring active:text-[#1B1E49]">
@@ -86,7 +79,7 @@ const About = () => {
 
 
           {/* our team */}
-          <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 mt-24 mb-24 gap-x-4 gap-y-8 place-items-center overflow-hidden">
+          {/* <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 mt-24 mb-24 gap-x-4 gap-y-8 place-items-center overflow-hidden">
             <div className="p-2 sm:pl-12">
               <p className="text-[#FBDC6D] text-lg capitalize font-bold border-b-4 border-[#FBDC6D] pb-2 w-fit">
                 Our Team
@@ -98,7 +91,7 @@ const About = () => {
                 <OurTeamCard key={index} memberData={member}/>
               ))
             }
-          </div>
+          </div> */}
 
 
           <CallToAction/>
