@@ -6,6 +6,7 @@ import Footer from "@/partials/Footer";
 import Header from "@/partials/Header";
 import Providers from "@/partials/Providers";
 import "@/styles/main.scss";
+import Script from "next/script";
 
 export default function RootLayout({
   children,
@@ -58,6 +59,16 @@ export default function RootLayout({
           rel="stylesheet"
         />
         <script async src="https://tally.so/widgets/embed.js"></script>
+
+        <Script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}`}></Script>
+        <Script id="google-analytics">
+          {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}');
+          `}
+        </Script>
       </head>
 
       <body suppressHydrationWarning={true}>

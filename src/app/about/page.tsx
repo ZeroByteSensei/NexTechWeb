@@ -63,7 +63,7 @@ const About = () => {
 
                   <p className="mt-4 text-gray-600">
                     
-                    Nextech was founded with a clear and powerful mission: to help business owners struggling to bring their operations online in today's fast-paced digital world. We ensure they stay competitive and thrive, rather than getting left behind. But our vision doesn't stop there. 
+                    Nextech was founded with a clear and powerful mission: to help business owners struggling to bring their operations online in today&apos;s fast-paced digital world. We ensure they stay competitive and thrive, rather than getting left behind. But our vision doesn&apos;t stop there. 
                     <br/>Nextech is also dedicated to empowering young people who dream of careers in digital marketing. We provide free or affordable, hands-on education, equipping them with the skills and knowledge they need to succeed. Nextech is a brand with a purpose. We are committed to driving growth, innovation, and opportunity for both businesses and individuals. 
                     <br/>
                     <br/>Join us, and be part of a movement that transforms challenges into opportunities and aspirations into achievements.
