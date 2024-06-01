@@ -57,6 +57,13 @@ export type Author = {
   slug?: string;
 };
 
+export type Service = {
+  heading: string;
+  description: string;
+  serviceImg: string;
+  serviceLink: string;
+  altText: string;
+}
 export type Feature = {
   button: button;
   image: string;

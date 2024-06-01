@@ -3,6 +3,7 @@ import SectionHeader from "@/partials/SectionHeader";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import WhyNexTechComp from "./WhyNexTechComp";
 
 const Courses = () => {
 
@@ -16,7 +17,7 @@ const Courses = () => {
     const courses=[{
         "Heading":"Pre-recorded Lectures on SMM",
         "Description":"This course comprise of pre-recorded lectures on Social Media Management that you can watch any time at your desired time.",
-        "CourseImg":"https://res.cloudinary.com/dncar4d7j/image/upload/v1715505846/coursesTrainings_xv2xxs.webp",
+        "CourseImg":"https://res.cloudinary.com/dncar4d7j/image/upload/v1717046680/1_gya9w5.webp",
         "IsAvailable":"false",
         "OriginalPrice":"1,999",
         "FinalPrice":"999",
@@ -27,7 +28,7 @@ const Courses = () => {
     },{
         "Heading":"Introduction to Social Media Management",
         "Description":"This is a course on social media management designed for individuals who are new to the field and want to learn the skill.",
-        "CourseImg":"https://res.cloudinary.com/dncar4d7j/image/upload/v1715505846/coursesTrainings_xv2xxs.webp",
+        "CourseImg":"https://res.cloudinary.com/dncar4d7j/image/upload/v1717046680/2_qod4pc.webp",
         "IsAvailable":"true",
         "OriginalPrice":"9,999",
         "FinalPrice":"4,999",
@@ -39,7 +40,7 @@ const Courses = () => {
     },{
         "Heading":"Digital Marketing Course For Corporates",
         "Description":"This course is specifically designed for corporates who want to train their employees in digital marketing.",
-        "CourseImg":"https://res.cloudinary.com/dncar4d7j/image/upload/v1715505846/coursesTrainings_xv2xxs.webp",
+        "CourseImg":"https://res.cloudinary.com/dncar4d7j/image/upload/v1717046681/3_wud4vy.webp",
         "IsAvailable":"true",
         "OriginalPrice":"XX,999",
         "FinalPrice":"X,999",
@@ -61,8 +62,12 @@ const Courses = () => {
                     {courses.map((course, index)=>(
                         <div key={index} className="w-full px-4 md:w-1/2 xl:w-1/3 mb-4">
                             <div className="border border-[#1B1E49] rounded-md bg-[#FBDC6D]">
-                                <div className="w-full aspect-[16/9] rounded-t-md"
-                                style={{backgroundImage:`url(${course.CourseImg})`, backgroundSize:"cover"}}/>
+                                <div className="w-full aspect-[16/9] rounded-t-md">
+                                    <Image width={500} height={400} alt="upcoming event info image"
+                                        src={course.CourseImg}
+                                        className="inset-0 h-full w-full object-cover rounded-t-md"
+                                    />
+                                </div>
 
                                 <div className="border-b border-black mb-4 pb-4 pt-4">
                                     <p className="w-full flex gap-x-4 ml-4"> 
@@ -136,7 +141,10 @@ const Courses = () => {
                         </div>
                     }
                 </div>
-                <div className="my-8 p-4 bg-[#FBDC6D] rounded-md text-[#1B1E49]">Our LMS is coming soon, Just to give you a better learning experience..</div>
+                <div className="my-8 p-4 bg-[#FBDC6D] rounded-md text-[#1B1E49]">
+                    Our LMS is coming soon, Just to give you a better learning experience..
+                </div>
+                <WhyNexTechComp/>
             </div>
         </section>
             

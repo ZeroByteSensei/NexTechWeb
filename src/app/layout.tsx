@@ -2,6 +2,7 @@ import SearchModal from "@/components/SearchModal";
 import config from "@/config/config.json";
 import theme from "@/config/theme.json";
 import TwSizeIndicator from "@/helpers/TwSizeIndicator";
+import FloatingWhatsapp from "@/partials/FloatingWhatsapp";
 import Footer from "@/partials/Footer";
 import Header from "@/partials/Header";
 import Providers from "@/partials/Providers";
@@ -58,9 +59,10 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap"
           rel="stylesheet"
         />
-        <script async src="https://tally.so/widgets/embed.js"></script>
+        <Script async src="https://tally.so/widgets/embed.js"></Script>
 
         <Script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}`}></Script>
+        
         <Script id="google-analytics">
           {`
               window.dataLayer = window.dataLayer || [];
@@ -69,6 +71,20 @@ export default function RootLayout({
               gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}');
           `}
         </Script>
+        <Script
+            id="microsoft-clarity-init"
+            type="text/javascript"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+                __html: `
+                (function(c,l,a,r,i,t,y){
+                    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+                })(window, document, "clarity", "script", "${process.env.NEXT_PUBLIC_MICROSOFT_CLARITY}");
+                `,
+            }}
+        />
       </head>
 
       <body suppressHydrationWarning={true}>
@@ -78,6 +94,7 @@ export default function RootLayout({
           <SearchModal />
           <main className="pt-[78px] bg-[#181818]">{children}</main>
           <Footer />
+          <FloatingWhatsapp/>
         </Providers>
       </body>
     </html>

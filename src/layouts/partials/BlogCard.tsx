@@ -11,7 +11,7 @@ const BlogCard = ({ data, blog_folder }: { data: Post, blog_folder:string }) => 
                 </div>
                 {/* bg-[url('/img/hero-pattern.svg')] */}
                 <Link href={`/${blog_folder}/${data.slug}`}>
-                <div className="absolute w-full left-0 p-5 -bottom-20 duration-500 group-hover:-translate-y-12 group-hover:opacity-80 group-hover:bg-[#FBDC6D]">
+                <div className="absolute w-full left-0 p-5 -bottom-20 duration-500 group-hover:-translate-y-12 group-hover:opacity-80 bg-gray-300 group-hover:bg-[#FBDC6D]">
                     <div className="absolute -z-10 left-0 w-64 h-28 opacity-0 duration-500 ">
 
                     </div>

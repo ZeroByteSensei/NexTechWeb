@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { useEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
+import Image from "next/image";
 gsap.registerPlugin(ScrollTrigger);
 
 const HeroSectionStaticTwo = () => {
@@ -34,21 +35,33 @@ const HeroSectionStaticTwo = () => {
     const handleScroll = (id:string) => {
         document.getElementById(id)?.scrollIntoView(true);
     };
-
+    
+// bg-[url(https://res.cloudinary.com/dncar4d7j/image/upload/v1715357152/HeroSectionDesktopNew_lmw88g.webp)]
     return ( 
-        <section ref={headRef} className="relative bg-[url(https://res.cloudinary.com/dncar4d7j/image/upload/v1715357152/HeroSectionDesktopNew_lmw88g.webp)] bg-cover bg-center bg-no-repeat">
-            <div className="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 sm:bg-gradient-to-r"/>
-            <div className="hidden md:block w-[320px] aspect-[8/16] mt-[78px] absolute top-[10%] right-[8%]"
-                style={{backgroundImage:"url(https://res.cloudinary.com/dncar4d7j/image/upload/v1715357145/phoneHeroSection_pvpcvq.png)", backgroundSize:"cover",
-                }}
-                ref={imgRef}
+        <section ref={headRef} className="relative  bg-cover bg-center bg-no-repeat">
+            <Image
+                    width={900}
+                    height={700}
+                    alt="Hero section Image"
+                    src="https://res.cloudinary.com/dncar4d7j/image/upload/v1715357152/HeroSectionDesktopNew_lmw88g.webp"
+                    className="absolute inset-0 h-full w-full object-cover"
             />
+            <div className="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 sm:bg-gradient-to-r"/>
+            <div className="hidden md:block w-[320px] aspect-[8/16] mt-[78px] absolute top-[10%] right-[8%]" ref={imgRef}>
+                <Image
+                    width={300}
+                    height={500}
+                    alt="hero section mini phone image"
+                    src="https://res.cloudinary.com/dncar4d7j/image/upload/v1715357145/phoneHeroSection_pvpcvq.png"
+                    className="absolute inset-0 h-full w-full object-cover"
+                  />
+            </div>
 
             <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8" >
                 <div className="max-w-xl text-center sm:text-left">
                     <h1 className="text-3xl text-[#1B1E49] font-extrabold sm:text-5xl">
-                        Let us build you
-                        <strong className="block font-extrabold text-[#D02727]"> A real BRAND. </strong>
+                        Unleash your
+                        <span className="block font-extrabold text-[#D02727]"> Digital Potential. </span>
                     </h1>
 
                     <p className="mt-4 max-w-lg sm:text-xl/relaxed text-[#1B1E49]">
@@ -66,6 +79,8 @@ const HeroSectionStaticTwo = () => {
                     </div>
                 </div>
             </div>
+            
+
         </section>
      );
 }

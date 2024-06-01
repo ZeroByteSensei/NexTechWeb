@@ -72,11 +72,8 @@ const Header = () => {
   return (
     <header className="bg-[#1B1E49] fixed w-full h-[78px] z-50">
       <nav className="flex justify-between items-center py-4 lg:py-0 lg:px-10">
-        <div className="flex items-center">
-          {/* <div className="w-5 h-5 bg-yellow-400 rounded-full" /> */}
-            <span className="text-sm font-semibold tracking-widest">
+        <div className="flex justify-center h-full mt-0 sm:mt-2">
               <Logo/>
-            </span>
         </div>
         <div className="lg:flex hidden gap-12 text-md text-[#FBDC6D]">
           {navigation.map(({href, name})=>(
@@ -132,7 +129,7 @@ const Header = () => {
               <div className="flex flex-col md:flex-row gap-y-8 md:justify-between px-4 md:pb-8">
                 <Social source={social.main} className="social-icons"/>
                 <div>
-                  <p className="text-[#FBDC6D] text-lg" >contact@nextechmedia.co.in</p>
+                  <Link href="mailto:contact@nextechmedia.co.in" className="text-[#FBDC6D] text-lg" >contact@nextechmedia.co.in</Link>
                 </div>
               </div>
             </div>

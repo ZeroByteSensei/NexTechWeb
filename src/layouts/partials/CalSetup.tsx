@@ -12,7 +12,7 @@ const CalSetup = () => {
     
     return ( 
         <div>
-            <Cal style={{width:"100%",height:"100%",overflow:"scroll"}} config={{layout: 'month_view'}} calLink="abhashmi/30min"></Cal>
+            <Cal style={{width:"100%",height:"100%",overflow:"scroll"}} config={{layout: 'month_view'}} calLink="nex-tech-media/30min"></Cal>
         </div>
      );
 }

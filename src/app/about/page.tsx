@@ -9,8 +9,8 @@ import Link from "next/link";
 
 const About = () => {
   const data: RegularPage = getListPage("about/_index.md");
-  const { frontmatter, content } = data;
-  const { title, meta_title, description, image, teamMembers } = frontmatter;
+  const { frontmatter } = data;
+  const { title, meta_title, description, teamMembers } = frontmatter;
 
   return (
     <>
@@ -30,10 +30,10 @@ const About = () => {
               </p>
             </div>
             <div className="bg-[#1B1E49] col-span-1 sm:col-span-2 grid grid-cols-1 sm:grid-cols-2 rounded-r-md py-6 gap-y-6">
-              <h3 className="text-lg col-span-1 text-[#8e92d5]"><span className="text-7xl opacity-85 -mr-3 text-yellow-200 pl-16">1</span>Global Happy Clients</h3>
-              <h3 className="text-lg col-span-1 text-[#8e92d5]"><span className="text-7xl opacity-85 -mr-2 text-yellow-200 pl-16">2</span>Customized Solutions</h3>
-              <h3 className="text-lg col-span-1 text-[#8e92d5]"><span className="text-7xl opacity-85 -mr-2 text-yellow-200 pl-16">3</span>International Team Members</h3>
-              <h3 className="text-lg col-span-1 text-[#8e92d5]"><span className="text-7xl opacity-85 -mr-2 text-yellow-200 pl-16">4</span>Client-Centric Approach</h3>
+              <h3 className="text-lg col-span-1 text-[#8e92d5]"><span className="text-7xl opacity-85 -mr-3 text-yellow-200 pl-16">45+</span>Global Happy Clients</h3>
+              <h3 className="text-lg col-span-1 text-[#8e92d5]"><span className="text-7xl opacity-85 -mr-2 text-yellow-200 pl-16">15+</span>Active Clients</h3>
+              <h3 className="text-lg col-span-1 text-[#8e92d5]"><span className="text-7xl opacity-85 -mr-2 text-yellow-200 pl-16">20+</span>International Team Members</h3>
+              <h3 className="text-lg col-span-1 text-[#8e92d5]"><span className="text-7xl opacity-85 -mr-2 text-yellow-200 pl-16">80+</span>Projects Completed</h3>
             </div>
           </div>
 
@@ -46,7 +46,7 @@ const About = () => {
                     width={500}
                     height={500}
                     alt=""
-                    src="https://res.cloudinary.com/dncar4d7j/image/upload/v1716207292/mission_ubjqp8.webp"
+                    src="https://res.cloudinary.com/dncar4d7j/image/upload/v1716474620/mission_ubjqp8.webp"
                     className="absolute inset-0 h-full w-full object-cover rounded-l-md"
                   />
                 </div>
@@ -79,7 +79,7 @@ const About = () => {
 
 
           {/* our team */}
-          {/* <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 mt-24 mb-24 gap-x-4 gap-y-8 place-items-center overflow-hidden">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 mt-24 mb-24 gap-x-4 gap-y-8 place-items-center overflow-hidden">
             <div className="p-2 sm:pl-12">
               <p className="text-[#FBDC6D] text-lg capitalize font-bold border-b-4 border-[#FBDC6D] pb-2 w-fit">
                 Our Team
@@ -91,7 +91,7 @@ const About = () => {
                 <OurTeamCard key={index} memberData={member}/>
               ))
             }
-          </div> */}
+          </div>
 
 
           <CallToAction/>

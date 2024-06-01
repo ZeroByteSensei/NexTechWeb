@@ -3,7 +3,7 @@ title: "Tell Your Brand's Story with Pictures: Why Visuals Matter?"
 meta_title: ""
 description: "when it comes to your brand's story, visuals play a powerful role in conveying your message"
 date: 2022-04-04T05:00:00Z
-image: "https://res.cloudinary.com/dncar4d7j/image/upload/v1705924479/samples/man-on-a-escalator.jpg"
+image: "https://res.cloudinary.com/dncar4d7j/image/upload/v1717166052/why_visual_matter_fk1fdz.webp"
 categories: ["SocialMedia", "Branding"]
 author: "John Doe"
 tags: ["Messaging", "BusinessGrowth"]

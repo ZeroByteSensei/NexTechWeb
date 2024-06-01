@@ -1,4 +1,5 @@
 import { Call_to_action } from "@/types";
+import Image from "next/image";
 import Link from "next/link";
 
 interface PageData {
@@ -31,14 +32,12 @@ const CallToAction = () => {
             </div>
           </div>
           <div className="h-full aspect-[16/7] sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px]"
-          style={{backgroundImage:`url(https://res.cloudinary.com/dncar4d7j/image/upload/v1715684063/CTA_IMG_dwabtj.webp)`, backgroundSize:"cover"}}/>
-              {/* <ImageFallback
-                    className="h-full w-full"
-                    src={data.frontmatter.image}
-                    alt="cta-image"
-                    width={100}
-                    height={100}
-                  /> */}
+          >
+              <Image width={700} height={500} alt="upcoming event info image"
+                    src="https://res.cloudinary.com/dncar4d7j/image/upload/v1715684063/CTA_IMG_dwabtj.webp"
+                    className="inset-0 h-full w-full object-cover"
+                />
+          </div>
           </section>
     </>
   );
