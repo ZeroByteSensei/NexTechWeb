@@ -11,11 +11,11 @@ import Logo from "@/components/Logo";
 
 
 const navLinks = [
-  { title: "Visit Home", href: "/" },
-  { title: "Our Services", href: "/services" },
-  { title: "Our Courses", href: "/courses" },
-  { title: "Know About Us", href: "/about-us" },
-  { title: "Our Blogs", href: "/blog" },
+  { title: "Home", href: "/" },
+  { title: "Services", href: "/services" },
+  { title: "Courses", href: "/courses" },
+  { title: "About Us", href: "/about" },
+  { title: "Blogs", href: "/blog" },
   { title: "Get In Touch", href: "/contact" },
 ];
 const navigation = [

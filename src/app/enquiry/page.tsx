@@ -52,7 +52,7 @@ const Enquiry = () => {
                               Our Locations
                           </h4>
                           <p className="text-base text-[#1B1E49]">
-                              99 S.t Jomblo Park Pekanbaru 28292. Indonesia
+                            3306 9th Street, United Parañaque Subdivision, 5 area, 7 San Isidro, Parañaque city, Philippines
                           </p>
                         </div>
                     </div>
@@ -88,10 +88,10 @@ const Enquiry = () => {
                         </div>
                         <div className="w-full">
                           <h4 className="mb-1 text-xl font-bold text-[#1B1E49]">
-                              Phone Number
+                              WhatsApp Number
                           </h4>
                           <p className="text-base text-[#1B1E49]">
-                              (+62)81 414 257 9980
+                              (+91) 79851 07551
                           </p>
                         </div>
                     </div>

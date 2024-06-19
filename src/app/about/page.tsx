@@ -23,17 +23,17 @@ const About = () => {
           <AboutSection/>
 
         {/* Fun Facts */}
-          <div className=" grid grid-cols-1 sm:grid-cols-3 w-full my-20 px-12">
+          <div className=" grid grid-cols-1 sm:grid-cols-3 w-full my-20 md:px-12">
             <div className="bg-[#1B1E49] col-span-1 rounded-l-md pl-6 pr-2 sm:pl-16 py-12">
               <h1 className="text-[#8e92d5]">Our fun facts</h1>
               <p className="text-[#cbcbcb] text-justify">What makes us different from others and stand out from the crowd? It may not seem much, but once you get onboard, things will unfold positively on a different level.
               </p>
             </div>
             <div className="bg-[#1B1E49] col-span-1 sm:col-span-2 grid grid-cols-1 sm:grid-cols-2 rounded-r-md py-6 gap-y-6">
-              <h3 className="text-lg col-span-1 text-[#8e92d5]"><span className="text-7xl opacity-85 -mr-3 text-yellow-200 pl-16">45+</span>Global Happy Clients</h3>
-              <h3 className="text-lg col-span-1 text-[#8e92d5]"><span className="text-7xl opacity-85 -mr-2 text-yellow-200 pl-16">15+</span>Active Clients</h3>
-              <h3 className="text-lg col-span-1 text-[#8e92d5]"><span className="text-7xl opacity-85 -mr-2 text-yellow-200 pl-16">20+</span>International Team Members</h3>
-              <h3 className="text-lg col-span-1 text-[#8e92d5]"><span className="text-7xl opacity-85 -mr-2 text-yellow-200 pl-16">80+</span>Projects Completed</h3>
+              <h3 className="text-lg col-span-1 text-[#8e92d5]"><span className="text-7xl opacity-85 -mr-3 text-yellow-200 pl-6 md:pl-16">45+</span>Global Happy Clients</h3>
+              <h3 className="text-lg col-span-1 text-[#8e92d5]"><span className="text-7xl opacity-85 -mr-2 text-yellow-200 pl-6 md:pl-16">15+</span>Active Clients</h3>
+              <h3 className="text-lg col-span-1 text-[#8e92d5]"><span className="text-7xl opacity-85 -mr-2 text-yellow-200 pl-6 md:pl-16">20+</span>International Team Members</h3>
+              <h3 className="text-lg col-span-1 text-[#8e92d5]"><span className="text-7xl opacity-85 -mr-2 text-yellow-200 pl-6 md:pl-16">80+</span>Projects Completed</h3>
             </div>
           </div>
 
@@ -46,7 +46,7 @@ const About = () => {
                     width={500}
                     height={500}
                     alt=""
-                    src="https://res.cloudinary.com/dncar4d7j/image/upload/v1716474620/mission_ubjqp8.webp"
+                    src="https://res.cloudinary.com/dncar4d7j/image/upload/v1717395861/mission_ubjqp8.webp"
                     className="absolute inset-0 h-full w-full object-cover rounded-l-md"
                   />
                 </div>

@@ -38,7 +38,7 @@ const HeroSectionStaticTwo = () => {
     
 // bg-[url(https://res.cloudinary.com/dncar4d7j/image/upload/v1715357152/HeroSectionDesktopNew_lmw88g.webp)]
     return ( 
-        <section ref={headRef} className="relative  bg-cover bg-center bg-no-repeat">
+        <section ref={headRef} className="relative bg-cover h-[75vh] sm:h-[90vh] bg-center bg-no-repeat">
             <Image
                     width={900}
                     height={700}
